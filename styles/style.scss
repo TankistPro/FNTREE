@@ -1,0 +1,120 @@
+body {
+    background-color: #E5E5E5;
+    font-family: "Gilroy", sans-serif;
+}
+nav {
+    background-color: #ffffff;
+    .nav-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 82px;
+        margin: 0 0 0 auto;
+
+        &-logo {}
+
+        &__right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            &-options {
+                display: flex;
+                p {
+                    display: inline;
+                    color: #000000;
+                    font-weight: 600;
+                    font-size: 1.25rem;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-left: 15px;
+                    }
+
+                    &::after {
+                        content: url("/img/nav/arrow-down.svg");
+                        width: 5px;
+                        height: 7px;
+                        vertical-align: middle;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            &-btn {
+                border: none;
+                outline: none;
+                font-size: 2.1875rem;
+                height: 100%;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: 500;
+                background-color:  #FF008A;
+                box-sizing: content-box;
+                position: relative;
+                overflow: hidden;
+                padding-left: 0;
+                margin-left: 85px;
+                
+                &::before, &::after {
+                    vertical-align: middle;
+                }
+
+                &::before {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    content:url("../../img/nav/user.svg");
+                    background-color: #B20060;
+                    height: 120%;
+                    width: 77px;
+                    margin-right: 50px;
+                }
+
+                &::after {
+                    display: inline-block;
+                    content: url("../../img/nav/btn-effect.png");
+                    width: 46px;
+                    height: 98px;
+                    padding-left:60px;
+                }
+            }
+        }
+    }
+
+    .nav-items {
+        .item {
+            display: inline-block;
+            height: 100%;
+            color: #000000;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            line-height: 4;
+            font-weight: 600;
+
+            &:not(:first-child) {
+                margin-left: 35px;
+            }
+
+            &::after {
+                display: block;
+                content:"";
+                background: #FF008A;
+                height: 3px;
+                width: 0%;
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+                transition: width .3s ease-in-out;
+            }
+
+            &:hover::after {
+                width: 85%;
+            }
+        }   
+    }
+}
