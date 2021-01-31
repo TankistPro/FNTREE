@@ -1,0 +1,38 @@
+@media screen and (max-width: 1350px) {
+  nav .nav-block__right-btn {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  nav .nav-block {
+    width: 95%;
+  }
+  nav .nav-block__right-btn::before {
+    margin-right: 20px;
+  }
+  nav .nav-block__right-btn::after {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  nav .nav-block__right-btn {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav .nav-block {
+    margin: 0 auto;
+  }
+  nav .nav-block__right-btn {
+    margin-left: 10px;
+  }
+  nav .nav-block__right {
+    display: none;
+  }
+  nav .nav-block .menu-icon {
+    display: block;
+  }
+}

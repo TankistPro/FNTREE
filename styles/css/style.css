@@ -22,6 +22,11 @@ nav .nav-block {
   margin: 0 0 0 auto;
 }
 
+nav .nav-block .menu-icon {
+  transform: rotate(180deg);
+  display: none;
+}
+
 nav .nav-block__right {
   display: flex;
   justify-content: space-between;
@@ -89,7 +94,7 @@ nav .nav-block__right-btn::after {
   content: url("../../img/nav/btn-effect.png");
   width: 46px;
   height: 98px;
-  padding-left: 60px;
+  margin-left: 60px;
 }
 
 nav .nav-items .item {

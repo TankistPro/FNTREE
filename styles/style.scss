@@ -10,6 +10,7 @@ body {
 }
 nav {
     background-color: #ffffff;
+
     .nav-block {
         display: flex;
         align-items: center;
@@ -19,6 +20,11 @@ nav {
         margin: 0 0 0 auto;
 
         &-logo {}
+
+        .menu-icon {
+            transform: rotate(180deg);
+            display: none;
+        }
 
         &__right {
             display: flex;
@@ -84,7 +90,7 @@ nav {
                     content: url("../../img/nav/btn-effect.png");
                     width: 46px;
                     height: 98px;
-                    padding-left:60px;
+                    margin-left:60px;
                 }
             }
         }
