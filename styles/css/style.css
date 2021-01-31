@@ -131,7 +131,8 @@ nav .nav-items .item:hover::after {
 
 .main-banner {
   position: relative;
-  margin-bottom: 120px;
+  width: fit-content;
+  margin: 0 auto 120px auto;
 }
 
 .main-banner .banner-content {
