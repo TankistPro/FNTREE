@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #E5E5E5;
     font-family: "Gilroy", sans-serif;
@@ -117,4 +123,122 @@ nav {
             }
         }   
     }
+}
+
+.fortnite-packages {
+    background-image: url("../../img/fortnite-package/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 312px 0 258px 0;
+
+    & h2 {
+        margin-left: 7.5%;
+        margin-bottom: 112px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        line-height: 48px;
+        color: #fff;
+    }
+
+    &__blocks {
+        margin-left: 7.5%;
+        display: flex;
+        
+        &__block {
+            height: 500px;
+            width: 350px;
+            background-image: url("../../img/fortnite-package/1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            & .sale {
+                width: 160px;
+                height: 37px;
+                background-image: url("../../img/fortnite-package/bg-sale.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-style: italic;
+                font-weight: 900;
+                font-size: 23px;
+                line-height: 29px;
+                color: #FFFFFF;
+                padding-bottom: 2px;
+            }
+
+            & .price {
+                display: flex;
+                align-items: flex-end;
+                width: 100%;
+
+                & .count {
+                    width: 50%;
+                    height: 50px;
+                    background-image: url("../../img/fortnite-package/bg-price.png");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+
+                    & span {
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin-top: 3%;
+                    }
+                }
+
+                & .buy {
+                    display: flex;
+                    height: 50px;
+                    width: 50%;
+
+                    & .img {
+                        width: 20%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #B20060;
+                    }
+
+                    & .text {
+                        display: flex;
+                        width: 80%;
+                        align-items: center;
+                        justify-content: center;
+                        background: #FF008A;
+
+                        & p {
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: #FFFFFF;
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vbucks {
+    margin: 88px 120px 241px 77px;
 }

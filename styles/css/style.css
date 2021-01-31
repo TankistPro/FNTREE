@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #E5E5E5;
   font-family: "Gilroy", sans-serif;
@@ -116,4 +122,120 @@ nav .nav-items .item::after {
 
 nav .nav-items .item:hover::after {
   width: 85%;
+}
+
+.fortnite-packages {
+  background-image: url("../../img/fortnite-package/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 312px 0 258px 0;
+}
+
+.fortnite-packages h2 {
+  margin-left: 7.5%;
+  margin-bottom: 112px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 48px;
+  color: #fff;
+}
+
+.fortnite-packages__blocks {
+  margin-left: 7.5%;
+  display: flex;
+}
+
+.fortnite-packages__blocks__block {
+  height: 500px;
+  width: 350px;
+  background-image: url("../../img/fortnite-package/1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fortnite-packages__blocks__block .sale {
+  width: 160px;
+  height: 37px;
+  background-image: url("../../img/fortnite-package/bg-sale.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding-bottom: 2px;
+}
+
+.fortnite-packages__blocks__block .price {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.fortnite-packages__blocks__block .price .count {
+  width: 50%;
+  height: 50px;
+  background-image: url("../../img/fortnite-package/bg-price.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.fortnite-packages__blocks__block .price .count span {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 3%;
+}
+
+.fortnite-packages__blocks__block .price .buy {
+  display: flex;
+  height: 50px;
+  width: 50%;
+}
+
+.fortnite-packages__blocks__block .price .buy .img {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #B20060;
+}
+
+.fortnite-packages__blocks__block .price .buy .text {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  background: #FF008A;
+}
+
+.fortnite-packages__blocks__block .price .buy .text p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-right: 14px;
+}
+
+.vbucks {
+  margin: 88px 120px 241px 77px;
 }
