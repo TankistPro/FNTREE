@@ -17,7 +17,7 @@ nav {
         justify-content: space-between;
         width: 90%;
         height: 82px;
-        margin: 0 0 0 auto;
+        margin: 0 0 33px auto;
 
         &-logo {}
 
@@ -130,6 +130,89 @@ nav {
         }   
     }
 }
+
+.main-banner {
+    position: relative;
+    margin-bottom:  120px;
+    
+    .banner-content {
+        position: absolute;
+        top: 35%;
+        left: 8%;
+        color: #fff;
+        max-width: 550px;
+
+        &__title {
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 60px;
+            font-size: 3.125rem;
+        }
+
+        &__text {
+            text-transform: uppercase;
+            line-height: 24px;
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+
+        &__button {
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            background-color: #FF008A;
+            padding: 9px 11px 7px 43px;
+            color: #ffffff;
+            text-transform: uppercase;
+            line-height: 24px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 48px;
+            position: relative;
+
+            &::before {
+                content: "+";
+                font-size: 1.5625rem;
+                background-color: #B20060;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 32px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .arrows-block {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%);
+
+        &__left, &__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+        }
+
+        &__left {
+            background: url('../../img/main-banner/arrow-left-bg.svg') no-repeat;
+        }
+
+        &__right {
+            margin-left: 8px;
+            background: url('../../img/main-banner/arrow-right-bg.svg') no-repeat;
+        }
+    }
+}
+
 
 .fortnite-packages {
     background-image: url("../../img/fortnite-package/bg.png");
