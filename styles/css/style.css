@@ -134,10 +134,41 @@ nav .nav-items .item:hover::after {
   width: 85%;
 }
 
+nav .menu-burger-block {
+  z-index: 10;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  right: 0;
+  background-color: #F9F9F9;
+  transition: .3s all;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+nav .menu-burger-block .close-menu {
+  display: block;
+  margin: 20px 20px 20px auto;
+}
+
+nav .menu-burger-block .menu-burger {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  margin: auto;
+}
+
 .main-banner {
   position: relative;
   width: fit-content;
   margin: 0 auto 120px auto;
+  width: 100%;
+}
+
+.main-banner .slider-item.first {
+  width: 100%;
+  height: 483px;
+  background: url("../../img/main-banner/banner.png") no-repeat;
 }
 
 .main-banner .banner-content {
