@@ -5,8 +5,13 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #FCFCFC;
   font-family: "Gilroy", sans-serif;
+}
+
+.pc {
+  color: #FF008A;
+  font-weight: bold;
 }
 
 nav {
@@ -84,7 +89,7 @@ nav .nav-block__right-btn::before {
   justify-content: center;
   content: url("../../img/nav/user.svg");
   background-color: #B20060;
-  height: 120%;
+  height: 100%;
   width: 77px;
   margin-right: 50px;
 }
@@ -93,7 +98,7 @@ nav .nav-block__right-btn::after {
   display: inline-block;
   content: url("../../img/nav/btn-effect.png");
   width: 46px;
-  height: 98px;
+  height: 82px;
   margin-left: 60px;
 }
 
@@ -210,6 +215,183 @@ nav .nav-items .item:hover::after {
 .main-banner .arrows-block__right {
   margin-left: 8px;
   background: url("../../img/main-banner/arrow-right-bg.svg") no-repeat;
+}
+
+.special-block {
+  max-width: 1723px;
+  margin: 0 auto 50px auto;
+}
+
+.special-block__title {
+  position: relative;
+  margin-bottom: 96px;
+}
+
+.special-block__title-main {
+  color: #000000;
+  font-size: 2.5rem;
+  line-height: 48px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.special-block__title-shadow {
+  position: absolute;
+  top: -150%;
+  left: -4%;
+  color: rgba(228, 0, 219, 0.03);
+  font-weight: bold;
+  font-size: 9.375rem;
+  z-index: -1;
+}
+
+.special-block__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.special-block__items-item {
+  position: relative;
+  max-width: 500px;
+  max-height: 320px;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  padding: 50px 0 28px 31px;
+  box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.1);
+}
+
+.special-block__items-item__offer {
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #FF008A;
+  padding: 6px 17px 5px 14px;
+  max-width: 200px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 1.25rem;
+  box-shadow: 0px 7px 20px rgba(255, 0, 138, 0.26);
+}
+
+.special-block__items-item__offer::before {
+  content: url("../../img/special-offer/lighting.svg");
+  width: 14px;
+  height: 17px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.special-block__items-item__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.special-block__items-item__content__val .value {
+  color: #000000;
+  font-weight: bold;
+  line-height: 48px;
+  font-size: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-block__items-item__content__val .value::after {
+  content: url("../../img/special-offer/dots.svg");
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 29%;
+}
+
+.special-block__items-item__content__val .sub {
+  line-height: 21px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.special-block__items-item__content__img {
+  margin-bottom: 20px;
+}
+
+.special-block__items-item__content__price {
+  display: flex;
+  margin-top: 40px;
+}
+
+.special-block__items-item__content__price .price-discount, .special-block__items-item__content__price .price-block {
+  padding: 8px 13px;
+}
+
+.special-block__items-item__content__price .price-discount-size, .special-block__items-item__content__price .price-block-size {
+  font-size: 0.975rem;
+}
+
+.special-block__items-item__content__price .price-discount p, .special-block__items-item__content__price .price-block p {
+  font-family: "Gilroy-SemiBold";
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 24px;
+}
+
+.special-block__items-item__content__price .price-discount {
+  background-color: #F9F9F9;
+}
+
+.special-block__items-item__content__price .price-discount p {
+  color: #FF008A;
+}
+
+.special-block__items-item__content__price .price-block {
+  background-color: #FF008A;
+  margin-left: 4px;
+}
+
+.special-block__items-item__content__price .price-block p {
+  color: #FFFFFF;
+}
+
+.special-block__items-item__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.special-block__items-item__button button {
+  font-family: "Gilroy-SemiBold";
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 21px;
+  font-size: 1.125rem;
+  outline: none;
+  border: none;
+  padding: 15px 12px 15px 49px;
+  background-color: #FF008A;
+}
+
+.special-block__items-item__button button::after {
+  content: url("../../img/special-offer/arrow-right.svg");
+  margin-left: 14px;
+}
+
+.special-block__items-item__button button::before {
+  content: url("../../img/special-offer/cart.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #B20060;
+  height: 100%;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fortnite-packages {
