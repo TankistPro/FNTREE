@@ -448,11 +448,22 @@ nav .menu-burger-block .menu-burger {
   display: flex;
 }
 
+.fortnite-packages__blocks .block-1 {
+  background-image: url("../../img/fortnite-package/1.png");
+}
+
+.fortnite-packages__blocks .block-2 {
+  background-image: url("../../img/fortnite-package/2.png");
+}
+
+.fortnite-packages__blocks .block-3 {
+  background-image: url("../../img/fortnite-package/3.png");
+}
+
 .fortnite-packages__blocks__block {
   height: 500px;
   width: 350px;
-  background-image: url("../../img/fortnite-package/1.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-right: 70px;
   display: flex;
@@ -579,6 +590,7 @@ nav .menu-burger-block .menu-burger {
   background: #FFFFFF;
   box-shadow: 0px 0px 26px rgba(0, 0, 0, 0.03);
   width: 500px;
+  margin-right: 20px;
 }
 
 .vbucks__blocks__block .left {
