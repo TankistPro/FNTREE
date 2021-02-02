@@ -128,13 +128,19 @@
   }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1370px) {
   .discount {
     background-image: url("../../img/footer/bg-discount-1360.png");
     padding: 408px 300px 178px 500px;
   }
   .nav__links a {
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  nav .nav-block__right-btn {
+    margin-left: 40px;
   }
 }
 
@@ -150,12 +156,6 @@
   }
   .nav__logo img {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-  nav .nav-block__right-btn {
-    margin-left: 40px;
   }
 }
 
