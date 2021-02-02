@@ -167,6 +167,20 @@ nav {
     margin: 0 auto 120px auto;
     width: 100%;
 
+    .slider-arrow-right {
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        width: 15px;
+        height: 24px;
+        display: none;
+
+        img {
+            max-width: none;
+            height: 55px;
+        }
+    }
+
     & .slider-item {
 
         &.first {
