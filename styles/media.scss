@@ -298,3 +298,14 @@
         background: url("../../img/main-banner/banner.png") top left -600px no-repeat;
     }
 }
+
+@media screen and (max-width: 680px) {
+    .main-banner .banner-content {
+        max-width: 450px;
+        left: 15%;
+    }
+
+    .main-banner .slider-counter {
+        left: 5%;
+    }
+}
