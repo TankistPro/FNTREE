@@ -112,7 +112,6 @@
   }
 }
 
-<<<<<<< Updated upstream
 @media screen and (max-width: 1500px) {
   .fortnite-packages {
     background-image: url("../../img/fortnite-package/bg-1500.png");
@@ -136,11 +135,6 @@
   }
   .nav__links a {
     margin-right: 20px;
-=======
-@media screen and (max-width: 1380px) {
-  .main-banner .slider-item.first {
-    background: url("../../img/main-banner/banner.png") top left -250px no-repeat;
->>>>>>> Stashed changes
   }
 }
 
@@ -177,7 +171,6 @@
   }
 }
 
-<<<<<<< Updated upstream
 @media screen and (max-width: 1162px) {
   .fortnite-packages {
     padding: 385px 0 180px 0;
@@ -205,11 +198,6 @@
   }
   .nav__links a {
     margin-bottom: 10px;
-=======
-@media screen and (max-width: 1175px) {
-  .main-banner .slider-item.first {
-    background: url("../../img/main-banner/banner.png") top left -360px no-repeat;
->>>>>>> Stashed changes
   }
 }
 

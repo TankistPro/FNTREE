@@ -181,6 +181,50 @@ nav {
         }
     }
 
+    .slider-counter {
+        position: absolute;
+        top: 40%;
+        left: 3%;
+
+        &__top,&__bottom {
+            color:rgba(255, 255, 255, 0.25);
+            font-size: 0.9375rem;
+            line-height: 18px;
+            font-weight: 600;
+
+            &.active {
+                color: #ffffff;
+            }
+        }
+
+        &__top {
+            margin-bottom: 6px;
+        }
+        
+        &__bottom {
+            margin-top: 6px;
+        }
+
+        &__line {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-top, &-bottom {
+                height: 75px;
+                width: 2px;
+                background-color:rgba(255, 255, 255, 0.25);
+                border-radius: 62px;
+
+                &.active {
+                    background-color:#FF008A;
+                }
+            }
+
+        }
+    }
+
     & .slider-item {
 
         &.first {
