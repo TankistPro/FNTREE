@@ -56,7 +56,7 @@ nav .nav-block__right-options p:last-child {
 }
 
 nav .nav-block__right-options p::after {
-  content: url("/img/nav/arrow-down.svg");
+  content: url("../../img/nav/arrow-down.svg");
   width: 5px;
   height: 7px;
   vertical-align: middle;
