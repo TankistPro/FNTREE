@@ -2,75 +2,136 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
 }
 
-.header {
+body {
+  background-color: #FCFCFC;
+  font-family: "Gilroy", sans-serif;
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+}
+
+main .tbl {
+  margin-top: 50px;
+}
+
+main .tbl table {
+  border-collapse: collapse;
   width: 100%;
-  height: 100px;
-  background: #FFFFFF;
-  display: flex;
-  justify-content: space-around;
+  padding: 0 45px;
 }
 
-.header__logo {
-  width: 165px;
-  height: 78px;
-  object-fit: cover;
+main .tbl table .tbl-header {
+  background-color: #ffffff;
+  border-bottom: 7px solid #FCFCFC;
 }
 
-.header__links {
-  display: flex;
-  margin-left: 158px;
+main .tbl table .tbl-header tr th {
+  color: #000000;
+  line-height: 30px;
+  font-size: 1.5625rem;
+  text-transform: uppercase;
+  padding: 25px 0;
 }
 
-.header__links .link {
-  height: 100%;
+main .tbl table .tbl-content {
+  background-color: #ffffff;
+}
+
+main .tbl table .tbl-content tr {
+  border-bottom: 3px solid #FCFCFC;
+}
+
+main .tbl table .tbl-content tr td {
+  text-align: center;
+  color: #3D3D3D;
+  line-height: 24px;
+  font-size: 1.25rem;
+  padding: 28px 0;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+main .tbl table .tbl-content tr td .circle {
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 35px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
 }
 
-.header__language {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin-right: 158px;
+main .tbl table .tbl-content tr td .circle.red {
+  background-color: rgba(241, 19, 19, 0.26);
 }
 
-.header__language p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  margin-right: 7px;
+main .tbl table .tbl-content tr td .circle.red .c2 {
+  background-color: #F11313;
 }
 
-.header__user {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
-
-.header__user p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.header__user .avatar {
-  width: 74px;
-  height: 74px;
-  object-fit: cover;
+main .tbl table .tbl-content tr td .circle .c2 {
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  margin: 0 17px;
+}
+
+main .tbl table .tbl-content tr td .pass-btn {
+  background: #FFFFFF;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+main .tbl table .tbl-content tr td .ex-state {
+  margin: auto;
+  max-width: 143px;
+  padding: 8px 0;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+main .tbl table .tbl-content tr td .ex-state p {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+main .tbl table .tbl-content tr td .ex-state p::before {
+  margin-right: 15px;
+}
+
+main .tbl table .tbl-content tr td .ex-state.success {
+  background-color: #68B404;
+}
+
+main .tbl table .tbl-content tr td .ex-state.success p::before {
+  content: url("../../img/table/ok.svg");
+  width: 15px;
+  height: 11px;
+}
+
+main .tbl table .tbl-content tr .col__id {
+  color: #AEAEAE;
+}
+
+main .tbl table .tbl-content tr .col__type {
+  font-weight: 600;
+}
+
+main .tbl table .tbl-content tr .col__pass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AEAEAE;
 }
