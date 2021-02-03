@@ -9,7 +9,8 @@ main {
 
     .tbl {
         margin-top: 50px;
-
+        max-height: 843px;
+        overflow: hidden;
         table {
             border-collapse: collapse;
             width: 100%;
@@ -54,6 +55,13 @@ main {
                                 background-color: rgba(241, 19, 19, 0.26);
                                 .c2 {
                                     background-color: #F11313;
+                                }
+                            }
+
+                            &.orange {
+                                background-color:  rgba(255, 138, 0, 0.26);
+                                .c2 {
+                                    background-color: #FF8A00;
                                 }
                             }
 
@@ -104,6 +112,17 @@ main {
                                     height: 11px;
                                 }
                             }
+
+                            &.orange {
+                                background-color: #FF8A00;
+
+                                p::before {
+                                    content: url("../../img/table/message-icon.svg");
+                                    width: 17px;
+                                    height: 17px;
+                                    vertical-align: middle;
+                                }
+                            }
                         }
 
                     }
@@ -122,6 +141,17 @@ main {
                             align-items: center;
                             justify-content: center;
                             color: #AEAEAE;
+                            
+                            input {
+                                background: #FFFFFF;
+                                max-width: 176px;
+                                box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.09);
+                                border-radius: 10px;
+                                border: none;
+                                outline: none;
+                                padding: 10px 17px;
+                                color: #3D3D3D;
+                            }
                         }
                     }
 
