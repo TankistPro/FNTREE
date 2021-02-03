@@ -9,6 +9,76 @@ body {
   font-family: "Gilroy", sans-serif;
 }
 
+.header {
+  width: 100%;
+  height: 100px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__logo {
+  width: 165px;
+  height: 78px;
+  object-fit: cover;
+}
+
+.header__links {
+  display: flex;
+  margin-left: 158px;
+}
+
+.header__links .link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.header__language {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 158px;
+}
+
+.header__language p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-right: 7px;
+}
+
+.header__user {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header__user p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.header__user .avatar {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 17px;
+}
+
 main {
   width: 95%;
   margin: 0 auto;
