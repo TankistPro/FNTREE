@@ -983,6 +983,21 @@ nav {
     justify-content: center;
     background-color:  rgba(15, 0, 37, 0.46);
 
+    &.signin {
+        
+        .modal-block .form {
+            margin-top: 70px;
+        }
+
+        .modal-block .form-btn {
+            margin-top: 55px;
+        }
+
+        .modal-block .form-field:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
     .modal-block {
          max-width: 511px;
          width: 100%;
@@ -1015,25 +1030,21 @@ nav {
                  line-height: 35px;
                  position: relative;
 
-                 &::after {
-                    display: block;
-                    content:"";
-                    background: #FF008A;
-                    height: 2px;
-                    width: 0%;
-                    left: 0%;
-                    position: absolute;
-                    transition: width .3s ease-in-out;
-                    border-radius: 1.5px;
-                    margin-top: 12px;
-                }
+                 &.active {
+                    color: #ffffff;
 
-                 &:hover {
-                     color: #ffffff;
-
-                     &::after {
+                    &::after {
+                        display: block;
+                        content:"";
+                        background: #FF008A;
+                        height: 2px;
                         width: 100%;
-                     }
+                        left: 0%;
+                        position: absolute;
+                        transition: width .3s ease-in-out;
+                        border-radius: 1.5px;
+                        margin-top: 12px;
+                    }
                  }
              }
 
@@ -1116,6 +1127,8 @@ nav {
                 margin-left: 3px;
             }
         }
+
+
     }
 }
 .update-password {

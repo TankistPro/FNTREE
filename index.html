@@ -331,11 +331,11 @@
             </div>
         </div>
     </footer> 
-    <div class="modal-wrapper" style="display: none;">
+    <div class="modal-wrapper login" style="display: none;">
         <div class="modal-block">
             <img src="./img/popup/liana.svg" class="liana" alt="liana">
             <div class="modal-block__header">
-                <a href="#" class="modal-block__header-link">Log in</a>
+                <a href="#" class="modal-block__header-link active">Log in</a>
                 <p class="modal-block__header-text">or</p>
                 <a href="#" class="modal-block__header-link">Sign up</a>
             </div>
@@ -354,6 +354,35 @@
                 <a href="#" class="form-q">Forget password?</a>
                 <input type="submit" value="LOG IN" class="form-btn">
                 <p class="form-text">Don`t have an account?<a href="#" class="form-link">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="modal-wrapper signin" style="display: none;">
+        <div class="modal-block">
+            <img src="./img/popup/liana.svg" class="liana" alt="liana">
+            <div class="modal-block__header">
+                <a href="#" class="modal-block__header-link">Log in</a>
+                <p class="modal-block__header-text">or</p>
+                <a href="#" class="modal-block__header-link active">Sign up</a>
+            </div>
+            <form action="" class="form">
+                <div class="form-field">
+                    <label for="userName" class="form-label">Username</label>
+                    <input type="text" id="userName" class="form-input" autocomplete="none">
+                </div>
+                <div class="form-field">
+                    <label for="userName" class="form-label">Email ID</label>
+                    <input type="text" id="userName" class="form-input" autocomplete="none">
+                </div>
+                <div class="form-field">
+                    <label for="userPass" class="form-label">Password</label>
+                    <input type="password" id="userPass" class="form-input">
+                    <a href="#" class="password">
+                        <img src="./img/popup/eye-ico.svg" alt="">
+                    </a>
+                </div>
+                <input type="submit" value="SIGN IN" class="form-btn">
+                <p class="form-text">Already have an account?<a href="#" class="form-link">Log in</a></p>
             </form>
         </div>
     </div>

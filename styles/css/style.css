@@ -966,6 +966,18 @@ nav .menu-burger-block .menu-burger {
   background-color: rgba(15, 0, 37, 0.46);
 }
 
+.modal-wrapper.signin .modal-block .form {
+  margin-top: 70px;
+}
+
+.modal-wrapper.signin .modal-block .form-btn {
+  margin-top: 55px;
+}
+
+.modal-wrapper.signin .modal-block .form-field:not(:first-child) {
+  margin-top: 40px;
+}
+
 .modal-wrapper .modal-block {
   max-width: 511px;
   width: 100%;
@@ -1001,25 +1013,21 @@ nav .menu-burger-block .menu-burger {
   position: relative;
 }
 
-.modal-wrapper .modal-block__header-link::after {
+.modal-wrapper .modal-block__header-link.active {
+  color: #ffffff;
+}
+
+.modal-wrapper .modal-block__header-link.active::after {
   display: block;
   content: "";
   background: #FF008A;
   height: 2px;
-  width: 0%;
+  width: 100%;
   left: 0%;
   position: absolute;
   transition: width .3s ease-in-out;
   border-radius: 1.5px;
   margin-top: 12px;
-}
-
-.modal-wrapper .modal-block__header-link:hover {
-  color: #ffffff;
-}
-
-.modal-wrapper .modal-block__header-link:hover::after {
-  width: 100%;
 }
 
 .modal-wrapper .modal-block__header-text {
