@@ -978,6 +978,43 @@ nav .menu-burger-block .menu-burger {
   margin-top: 40px;
 }
 
+.modal-wrapper.b-vbucks .modal-block {
+  height: auto;
+  padding-bottom: 68px;
+}
+
+.modal-wrapper.b-vbucks .modal-block__header-text {
+  color: #ffffff;
+  line-height: 59px;
+  text-transform: uppercase;
+  font-size: 3.125rem;
+  font-weight: 500;
+  margin: 30px 0 0 0;
+}
+
+.modal-wrapper.b-vbucks .modal-block .form {
+  margin-top: 35px;
+}
+
+.modal-wrapper.b-vbucks .modal-block .form-text {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.modal-wrapper.b-vbucks .modal-block .form-text__upsize {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.modal-wrapper.b-vbucks .modal-block .form-btn {
+  margin-top: 0;
+}
+
 .modal-wrapper .modal-block {
   max-width: 511px;
   width: 100%;
@@ -987,6 +1024,13 @@ nav .menu-burger-block .menu-burger {
   position: relative;
   padding: 0  90px;
   z-index: -1;
+}
+
+.modal-wrapper .modal-block__close {
+  cursor: pointer;
+  position: absolute;
+  top: 4%;
+  right: 5%;
 }
 
 .modal-wrapper .modal-block .liana {

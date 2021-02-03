@@ -333,6 +333,7 @@
     </footer> 
     <div class="modal-wrapper login" style="display: none;">
         <div class="modal-block">
+            <img src="./img/popup/close.svg" class="modal-block__close" alt="close">
             <img src="./img/popup/liana.svg" class="liana" alt="liana">
             <div class="modal-block__header">
                 <a href="#" class="modal-block__header-link active">Log in</a>
@@ -359,6 +360,7 @@
     </div>
     <div class="modal-wrapper signin" style="display: none;">
         <div class="modal-block">
+            <img src="./img/popup/close.svg" class="modal-block__close" alt="close">
             <img src="./img/popup/liana.svg" class="liana" alt="liana">
             <div class="modal-block__header">
                 <a href="#" class="modal-block__header-link">Log in</a>
@@ -383,6 +385,30 @@
                 </div>
                 <input type="submit" value="SIGN IN" class="form-btn">
                 <p class="form-text">Already have an account?<a href="#" class="form-link">Log in</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="modal-wrapper b-vbucks" style="display: none;">
+        <div class="modal-block">
+            <img src="./img/popup/close.svg" class="modal-block__close" alt="close">
+            <img src="./img/popup/liana.svg" class="liana" alt="liana">
+            <div class="modal-block__header">
+                <p class="modal-block__header-text">2800 vbucks</p>
+            </div>
+            <form action="" class="form">
+                <div class="form-field">
+                    <label for="userName" class="form-label">Email ID from Epic Games</label>
+                    <input type="text" id="userName" class="form-input" autocomplete="none">
+                </div>
+                <div class="form-field">
+                    <label for="userPass" class="form-label">Password from Epic Games</label>
+                    <input type="password" id="userPass" class="form-input">
+                    <a href="#" class="password">
+                        <img src="./img/popup/eye-ico.svg" alt="">
+                    </a>
+                </div>
+                <p class="form-text">To pay: <span class="form-text__upsize">$ 28.00</span></p>
+                <input type="submit" value="SIGN IN" class="form-btn">
             </form>
         </div>
     </div>
@@ -416,6 +442,6 @@
             <button>ENTER CODE</button>
         </div>
     </div>
-    <script src="/scripts/openMenu.js"></script>
+    <script src="./scripts/openMenu.js"></script>
 </body>
 </html>
