@@ -123,6 +123,35 @@
             </table>
         </div>
     </main>
+    <div class="popop-change-password" style="display: none;">
+        <div class="popop-change-password__block">
+            <img src="./img/user-panel/close.svg" alt="" class="close">
+            <div class="current-password">
+                <p>Current password</p>
+                <div class="current-password__input correctly">
+                    <div class="input">
+                        <input type="password" placeholder="New password" value="00000">
+                        <img src="./img/user-panel/eye-close.svg" alt="">
+                    </div>
+                </div>
+                <div class="current-password__input wrong">
+                    <div class="input">
+                        <input type="password" placeholder="New password">
+                        <img src="./img/user-panel/eye-close.svg" alt="">
+                    </div>
+                    <div class="wrong__text"><p>Password must be between 6 and 18 characters using letters “A-z”!</p></div>
+                </div>
+            </div>
+            <div class="confirm-password">
+                <p>Confirm password</p>
+                <div class="input">
+                    <input type="text">
+                    <img src="./img/user-panel/eye-open.svg" alt="">
+                </div>
+            </div>
+            <button class="change">CHANGE</button>
+        </div>
+    </div>
     <script src="./scripts/chooseLanguage.js"></script>
     <script src="./scripts/openUser.js"></script>
 </body>

@@ -363,3 +363,160 @@ main .tbl table .tbl-content tr .col__pass input {
   padding: 10px 17px;
   color: #3D3D3D;
 }
+
+.popop-change-password {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(15, 0, 37, 0.46);
+  width: 100%;
+  height: 100%;
+}
+
+.popop-change-password__block {
+  width: 595px;
+  height: 604px;
+  margin: 9% auto;
+  background: #FFFFFF;
+  border-radius: 14px;
+  position: relative;
+  padding: 86px 67px 43px 67px;
+}
+
+.popop-change-password__block .close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.popop-change-password__block .current-password p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+  margin-bottom: 5px;
+}
+
+.popop-change-password__block .current-password__input {
+  margin-bottom: 70px;
+}
+
+.popop-change-password__block .current-password__input:last-child {
+  margin-bottom: 0;
+}
+
+.popop-change-password__block .current-password__input .input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
+  padding: 10px 0;
+}
+
+.popop-change-password__block .current-password__input .input input {
+  width: 85%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.9365px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.66);
+  border: none;
+  outline: none;
+}
+
+.popop-change-password__block .current-password__input .input input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.popop-change-password__block .current-password__input .input img {
+  cursor: pointer;
+}
+
+.popop-change-password__block .current-password .correctly .input {
+  border-bottom: 1.39683px solid #68B404;
+}
+
+.popop-change-password__block .current-password .wrong .input {
+  border-bottom: 1.39683px solid rgba(255, 0, 0, 0.75);
+}
+
+.popop-change-password__block .current-password .wrong .input input::placeholder {
+  color: #FF4040;
+}
+
+.popop-change-password__block .current-password .wrong__text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FF001E;
+}
+
+.popop-change-password__block .confirm-password {
+  margin-top: 43px;
+  margin-bottom: 60px;
+}
+
+.popop-change-password__block .confirm-password p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+  margin-bottom: 5px;
+}
+
+.popop-change-password__block .confirm-password .input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
+  padding: 10px 0;
+}
+
+.popop-change-password__block .confirm-password .input input {
+  width: 85%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+
+.popop-change-password__block .confirm-password .input input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.popop-change-password__block .confirm-password .input img {
+  cursor: pointer;
+}
+
+.popop-change-password__block .change {
+  width: 100%;
+  outline: none;
+  height: 64px;
+  background: #FF008A;
+  border-radius: 10.8777px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27.1942px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
