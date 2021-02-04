@@ -39,6 +39,25 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__links .link::after {
+  display: block;
+  content: "";
+  background: #FF008A;
+  height: 3px;
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width .3s ease-in-out;
+}
+
+.header__links .link:hover::after {
+  width: 100%;
 }
 
 .header__language {
@@ -46,6 +65,7 @@ body {
   align-items: center;
   height: 100%;
   margin-right: 158px;
+  position: relative;
 }
 
 .header__language p {
@@ -57,10 +77,27 @@ body {
   margin-right: 7px;
 }
 
+.header__language img {
+  cursor: pointer;
+}
+
+.header__language .list-language {
+  display: none;
+  z-index: 1;
+  top: 38%;
+  left: 0;
+  position: absolute;
+}
+
+.header__language .list-language p {
+  cursor: pointer;
+}
+
 .header__user {
   display: flex;
   height: 100%;
   align-items: center;
+  position: relative;
 }
 
 .header__user p {
@@ -77,6 +114,95 @@ body {
   object-fit: cover;
   border-radius: 50%;
   margin: 0 17px;
+}
+
+.header__user .open {
+  cursor: pointer;
+}
+
+.header__user__func {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background-color: #fff;
+  width: 142px;
+  height: 110px;
+  box-shadow: 0px 13px 14px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  display: none;
+}
+
+.header__user__func p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #AEAEAE;
+}
+
+.header__user__func .settings {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 13px 25px 0 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.header__user__func .settings__list {
+  position: absolute;
+  top: 0;
+  left: -179px;
+  width: 179px;
+  height: 77px;
+  background-color: #fff;
+  padding: 8px 0;
+  display: none;
+}
+
+.header__user__func .settings__list p {
+  width: 100%;
+  padding: 5px 19px 5px 0;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.header__user__func .settings__list p:hover {
+  background: #FF008A;
+  color: #fff;
+}
+
+.header__user__func .withdraw {
+  margin: 11px 25px 13px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__user__func .exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  border-top: 1px solid #F6F6F6;
+  padding: 7px 26px 5px 0;
+}
+
+.header__user__func .exit img {
+  cursor: pointer;
+}
+
+.header__user__func .exit p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-left: 9px;
+  cursor: pointer;
 }
 
 main {
