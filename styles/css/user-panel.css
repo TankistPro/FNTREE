@@ -520,3 +520,171 @@ main .tbl table .tbl-content tr .col__pass input {
   text-align: center;
   color: #FFFFFF;
 }
+
+.popop-enter-email {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(15, 0, 37, 0.46);
+  width: 100%;
+  height: 100%;
+}
+
+.popop-enter-email__block {
+  width: 595px;
+  height: 290px;
+  margin: 15% auto;
+  background: #FFFFFF;
+  border-radius: 14px;
+  position: relative;
+  padding: 53px 63px 47px 63px;
+}
+
+.popop-enter-email__block .close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.popop-enter-email__block p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.3492px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.popop-enter-email__block__input {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.popop-enter-email__block__input .input {
+  border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
+  width: 100%;
+  padding: 4px 0;
+}
+
+.popop-enter-email__block__input .input input {
+  outline: none;
+  width: 100%;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.9365px;
+  line-height: 33px;
+  color: #AEAEAE;
+}
+
+.popop-enter-email__block__input .wrong {
+  border-bottom: 1.39683px solid rgba(255, 64, 64, 0.75);
+}
+
+.popop-enter-email__block__input .wrong__text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FF001E;
+}
+
+.popop-enter-email__block button {
+  width: 100%;
+  height: 64px;
+  cursor: pointer;
+  background: #FF008A;
+  border-radius: 10.8777px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27.1942px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.popop-enter-code {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(15, 0, 37, 0.46);
+  width: 100%;
+  height: 100%;
+}
+
+.popop-enter-code__block {
+  width: 595px;
+  height: 290px;
+  margin: 15% auto;
+  background: #FFFFFF;
+  border-radius: 14px;
+  position: relative;
+  padding: 53px 63px 47px 63px;
+}
+
+.popop-enter-code__block .close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.popop-enter-code__block p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.3492px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.popop-enter-code__block__input {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.popop-enter-code__block__input .input {
+  border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
+  width: 100%;
+  padding: 4px 0;
+}
+
+.popop-enter-code__block__input .input input {
+  outline: none;
+  width: 100%;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.9365px;
+  line-height: 33px;
+  color: #AEAEAE;
+}
+
+.popop-enter-code__block__input .wrong {
+  border-bottom: 1.39683px solid rgba(255, 64, 64, 0.75);
+}
+
+.popop-enter-code__block__input .wrong__text p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FF001E;
+}
+
+.popop-enter-code__block button {
+  width: 100%;
+  height: 64px;
+  cursor: pointer;
+  background: #FF008A;
+  border-radius: 10.8777px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27.1942px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
