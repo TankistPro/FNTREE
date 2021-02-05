@@ -31,6 +31,7 @@ btn_closeUpdatePasKey.addEventListener('click', () => closeUpdatePasKey());
 btn_enterUpdatePasKey.addEventListener('click', () => closeUpdatePasKey());
 
 for (let i=0; i<list_input.length; i++) {
+    list_input[i].addEventListener('focus', () => focus_input(event));
     list_input[i].addEventListener('input', () => input_pas(list_input[i], i));
 }
 
@@ -38,30 +39,33 @@ function closeUpdatePasKey() {
     window_upadatePasKey.style.display = 'none';
 }
 
-// function input_pas(el, i) {
+function focus_input() {
+    event.target.select();
+}
+function input_pas(el, i) {
     
-//     if (el.value.length == 5) {
-//         console.log('p');
-//         let key = `${el.value}`;
-//         for (let k=0; k<5; k++) {
-//             list_input[k].value = key[k];
-//         }
-//     } else {
-//         if (el.value.length > 1) {
-//             el.value = el.value[el.value.length-1];
-//         }
-//         if (el.value.length == 1) {
-//             // while (list_input[i+1].value.length == 1) {
-//             //     if (i == list_input.length-2) {
-//             //         break;
-//             //     }
-//             //     i++;
-//             // }
-//             if (i < list_input.length-1) {
-//                 list_input[i+1].focus();
-//             }
-//         }
-//     }
-// }
+    if (el.value.length == 5) {
+        console.log('p');
+        let key = `${el.value}`;
+        for (let k=0; k<5; k++) {
+            list_input[k].value = key[k];
+        }
+    } else {
+        if (el.value.length > 1) {
+            el.value = el.value[el.value.length-1];
+        }
+        if (el.value.length == 1) {
+            // while (list_input[i+1].value.length == 1) {
+            //     if (i == list_input.length-2) {
+            //         break;
+            //     }
+            //     i++;
+            // }
+            if (i < list_input.length-1) {
+                list_input[i+1].focus();
+            }
+        }
+    }
+}
 
 
