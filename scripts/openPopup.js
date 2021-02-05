@@ -18,7 +18,6 @@ links.forEach(link => {
     link.addEventListener("click", () => {
         let modal = link.closest(".modal-wrapper");
         if(modal.classList.contains("signin")){
-            console.log("переключаю")
             signInPopup.style.display = "none";
             loginPopup.style.display = "flex";
         } else {
