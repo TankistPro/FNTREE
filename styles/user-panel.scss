@@ -81,14 +81,32 @@ body {
         }
 
         & .list-language {
+            position: absolute;
             display: none;
             z-index: 1;
-            top: 38%;
-            left: 0;
-            position: absolute;
+            top: 100%;
+            left: -30px;
+            padding: 6px 0;
+            background: #fff;
 
             & p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 17px;
+                width: 100%;
+                padding: 5px 22px;
+                line-height: 20px;
+                color: #AEAEAE;
                 cursor: pointer;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    background: #FF008A;
+                    color: #FFFFFF;
+                }
             }
         }
     }
@@ -132,6 +150,7 @@ body {
             align-items: flex-end;
             justify-content: space-around;
             display: none;
+            padding: 8px 0;
 
             & p {
                 font-style: normal;
@@ -145,9 +164,22 @@ body {
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
-                padding: 13px 25px 0 14px;
+                align-items: center;
+                padding: 5px 25px 5px 14px;
                 cursor: pointer;
                 position: relative;
+
+                &:hover {
+                    background: #FF008A;
+
+                    & svg path{
+                        fill: #fff;
+                    }
+                    
+                    & p {
+                        color: #fff;
+                    }
+                }
 
                 &__list {
                     position: absolute;
@@ -164,21 +196,30 @@ body {
                         padding: 5px 19px 5px 0;
                         display: flex;
                         justify-content: flex-end;
+                        color: #AEAEAE !important;
                         cursor: pointer;
 
                         &:hover {
                             background: #FF008A;
-                            color: #fff;
+                            color: #fff !important;
                         }
                     }
                 }
             }
 
             .withdraw {
-                margin: 11px 25px 13px 0;
+                padding: 5px 25px 5px 0;
                 cursor: pointer;
                 display: flex;
                 justify-content: flex-end;
+
+                &:hover {
+                    background: #FF008A;
+                    
+                    & p {
+                        color: #fff;
+                    }
+                }
             }
 
             & .exit {
@@ -579,7 +620,15 @@ main {
                     font-weight: 500;
                     font-size: 27.9365px;
                     line-height: 33px;
-                    color: #AEAEAE;
+                    color: rgba(0, 0, 0, 0.75);
+
+                    &::placeholder {
+                        color: #AEAEAE;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 27.9365px;
+                        line-height: 33px;
+                    }
                 }
             }
     
@@ -664,7 +713,7 @@ main {
                     font-weight: 500;
                     font-size: 27.9365px;
                     line-height: 33px;
-                    color: #AEAEAE;
+                    color: rgba(0, 0, 0, 0.75)
                 }
             }
     

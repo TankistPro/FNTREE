@@ -14,18 +14,20 @@ for (let i=0; i<list_p.length; i++) {
 function open_list() {
     if (img_contr.style.transform == 'rotate(180deg)') {
         img_contr.style.transform = 'rotate(0deg)';
-        main_lang.style.color = '#000';
         list_language.style.display = 'none'
     } else {
         img_contr.style.transform = 'rotate(180deg)';
-        main_lang.style.color = '#fff';
         list_language.style.display = 'block'
     }
 }
 
 function changeLn(el) {
-    main_lang.textContent = `${el.textContent}`;
+    if (el.textContent == 'Русский') {
+        main_lang.textContent = `RU`;
+    }
+    if (el.textContent == 'English') {
+        main_lang.textContent = `EN`;
+    }
     img_contr.style.transform = 'rotate(0deg)';
-    main_lang.style.color = '#000';
     list_language.style.display = 'none'
 }

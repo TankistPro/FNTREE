@@ -3,7 +3,6 @@ const contr_menu = user.getElementsByClassName('open')[0];
 const menu = user.getElementsByClassName('header__user__func')[0];
 const set = menu.getElementsByClassName('settings')[0];
 const open_set = set.getElementsByClassName('settings__list')[0];
-console.log(open_set);
 
 
 contr_menu.addEventListener('click', () => open_menu());
