@@ -1,3 +1,4 @@
+// =============LogIN & SignIn=================
 const navButton = document.querySelector(".nav-block__right-btn"),
     loginPopup = document.querySelector(".login"),
     signInPopup = document.querySelector(".signin"),
@@ -24,5 +25,16 @@ links.forEach(link => {
             signInPopup.style.display = "flex";
             loginPopup.style.display = "none";
         }
+    })
+})
+
+
+// ============ V-BUCKS =================
+const vBucksOffersBtn = document.querySelectorAll(".offer-btn"),
+    vBucksPopup = document.querySelector(".b-vbucks");
+
+vBucksOffersBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        vBucksPopup.style.display = "flex";
     })
 })

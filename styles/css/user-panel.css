@@ -434,8 +434,9 @@ main .tbl table .tbl-content tr .col__type {
 main .tbl table .tbl-content tr .col__pass {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   color: #AEAEAE;
+  margin-right: 20%;
 }
 
 main .tbl table .tbl-content tr .col__pass input {

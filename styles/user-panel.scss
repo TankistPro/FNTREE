@@ -427,8 +427,9 @@ main {
                         &__pass {
                             display: flex;
                             align-items: center;
-                            justify-content: center;
+                            justify-content: flex-end;
                             color: #AEAEAE;
+                            margin-right: 20%;
                             
                             input {
                                 background: #FFFFFF;
