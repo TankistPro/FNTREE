@@ -292,6 +292,16 @@
     nav .nav-block .menu-icon {
         display: block;
     }
+
+    // nav .nav-block .nav-block__logo {
+    //     order: 2;
+    // }
+    // nav .nav-block .menu-icon {
+    //     order: 1;
+    // }
+    // nav .nav-block .nav-items {
+    //     order: 3;
+    // }
 }
 
 @media screen and (max-width: 880px) {
@@ -379,9 +389,21 @@
     .main-banner .banner-content {
         max-width: 450px;
         left: 15%;
+        top: 20%;
     }
 
     .main-banner .slider-counter {
         left: 5%;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .special-block__title-main {
+        text-align: center;
+    }
+    .special-block__title-shadow {
+        font-size: 8rem;
+        left: 10%;
+        top: -115%;
     }
 }

@@ -272,8 +272,20 @@
   .main-banner .banner-content {
     max-width: 450px;
     left: 15%;
+    top: 20%;
   }
   .main-banner .slider-counter {
     left: 5%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .special-block__title-main {
+    text-align: center;
+  }
+  .special-block__title-shadow {
+    font-size: 8rem;
+    left: 10%;
+    top: -115%;
   }
 }
