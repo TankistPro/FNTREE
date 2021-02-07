@@ -7,6 +7,7 @@
 body {
   background-color: #FCFCFC;
   font-family: "Gilroy", sans-serif;
+  overflow-y: hidden;
 }
 
 .header {
@@ -252,9 +253,22 @@ main {
 }
 
 main .tbl {
-  margin-top: 50px;
-  max-height: 843px;
-  overflow: hidden;
+  margin-top: 40px;
+  max-height: 765px;
+  overflow-y: scroll;
+}
+
+main .tbl::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: #ffffff;
+  border-radius: 3.5px;
+}
+
+main .tbl::-webkit-scrollbar-thumb {
+  background-color: #3D3D3D;
+  border-radius: 3.5px;
+  margin-right: 40px;
 }
 
 main .tbl table {
@@ -273,10 +287,13 @@ main .tbl table .tbl-header tr th {
   line-height: 30px;
   font-size: 1.5625rem;
   text-transform: uppercase;
-  padding: 25px 0;
+  padding: 24px 0;
 }
 
 main .tbl table .tbl-content {
+  overflow-y: scroll;
+  max-height: 753px;
+  height: 100%;
   background-color: #ffffff;
 }
 
@@ -289,7 +306,7 @@ main .tbl table .tbl-content tr td {
   color: #3D3D3D;
   line-height: 24px;
   font-size: 1.25rem;
-  padding: 28px 0;
+  padding: 17px 0;
   font-weight: 500;
   vertical-align: middle;
 }
@@ -302,6 +319,14 @@ main .tbl table .tbl-content tr td .circle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main .tbl table .tbl-content tr td .circle.green {
+  background-color: rgba(104, 180, 4, 0.26);
+}
+
+main .tbl table .tbl-content tr td .circle.green .c2 {
+  background-color: #68B404;
 }
 
 main .tbl table .tbl-content tr td .circle.red {
@@ -356,6 +381,20 @@ main .tbl table .tbl-content tr td .ex-state p {
 
 main .tbl table .tbl-content tr td .ex-state p::before {
   margin-right: 15px;
+}
+
+main .tbl table .tbl-content tr td .ex-state.dis {
+  background-color: #D7D7D7;
+}
+
+main .tbl table .tbl-content tr td .ex-state.dis p {
+  color: #AEAEAE;
+}
+
+main .tbl table .tbl-content tr td .ex-state.dis p::before {
+  content: url("../../img/table/gray-ok.svg");
+  width: 15px;
+  height: 11px;
 }
 
 main .tbl table .tbl-content tr td .ex-state.success {
