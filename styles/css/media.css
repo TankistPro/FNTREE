@@ -253,6 +253,91 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .fortnite-packages {
+    background-image: url("../../img/fortnite-package/bg-900.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 600px 0 450px 0;
+  }
+  .fortnite-packages h2 {
+    margin: 0 0 90px 0;
+    font-size: 60px;
+  }
+  .fortnite-packages__blocks {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .fortnite-packages__blocks__block {
+    margin-bottom: 60px;
+    width: 500px;
+    height: 700px;
+    margin: 0 0 60px 0;
+  }
+  .vbucks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 88px 77px 100px 77px;
+  }
+  .vbucks__title {
+    align-items: flex-end;
+  }
+  .vbucks__title p {
+    font-size: 55px;
+  }
+  .vbucks__blocks {
+    margin-left: 0;
+    width: 100%;
+  }
+  .vbucks__blocks__block {
+    margin-right: 0;
+    width: 100%;
+  }
+  .discount {
+    background-image: url("../../img/footer/bg-discount-900.png");
+    padding: 608px 0 178px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .discount h2 {
+    font-size: 65px;
+  }
+  .discount p {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 10px 10% 30px 10%;
+    text-align: center;
+  }
+  .nav {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .nav__logo {
+    margin: 0;
+    background-repeat: no-repeat;
+  }
+  .nav__links {
+    display: flex;
+    margin: 0 20px;
+  }
+  .nav__inf {
+    margin: 0;
+    width: auto;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 880px) {
   .main-banner .arrows-block {
     display: none;
@@ -262,9 +347,37 @@
   }
 }
 
+@media screen and (max-width: 830px) {
+  .fortnite-packages {
+    padding: 400px 0 380px 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .fortnite-packages {
+    padding: 330px 0 180px 0;
+  }
+}
+
 @media screen and (max-width: 720px) {
   .main-banner .slider-item.first {
     background: url("../../img/main-banner/banner.png") top left -600px no-repeat;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fortnite-packages {
+    padding: 310px 0 70px 0;
+  }
+  .fortnite-packages h2 {
+    font-size: 40px;
+  }
+  .fortnite-packages__blocks__block {
+    width: 450px;
+    height: 620px;
+  }
+  .discount p {
+    line-height: 30px;
   }
 }
 
@@ -287,5 +400,142 @@
     font-size: 8rem;
     left: 10%;
     top: -115%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fortnite-packages {
+    padding: 210px 0 70px 0;
+  }
+  .fortnite-packages h2 {
+    margin-bottom: 50px;
+  }
+  .vbucks {
+    margin: 88px 30px 100px 30px;
+  }
+  .vbucks__title {
+    width: 450px;
+  }
+  .vbucks__title p {
+    font-size: 42px;
+  }
+  .discount {
+    padding: 508px 0 178px 0;
+  }
+  .discount h2 {
+    font-size: 40px;
+  }
+  .discount p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 10% 30px 10%;
+    text-align: center;
+  }
+  .discount .form .input {
+    width: 350px;
+  }
+  .discount .form .btn {
+    width: 160px;
+    margin-left: 80%;
+    -webkit-transform: skew(337deg);
+  }
+  .discount .form .btn button {
+    -webkit-transform: skew(22deg);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .fortnite-packages h2 {
+    font-size: 32px;
+  }
+  .fortnite-packages__blocks__block {
+    width: 370px;
+    height: 550px;
+  }
+  .vbucks__title {
+    width: 380px;
+  }
+  .vbucks__title p {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .vbucks__blocks__block {
+    padding-top: 21px;
+  }
+  .vbucks__blocks__block .left__banner {
+    box-shadow: 0px 7px 20px rgba(255, 0, 92, 0.26);
+    margin: 0 0 37px 25px;
+  }
+  .vbucks__blocks__block .left__banner img {
+    height: 13.33336353302002px;
+    width: 13.332174301147461px;
+  }
+  .vbucks__blocks__block .left__banner p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .vbucks__blocks__block .left__count {
+    margin-left: 25px;
+    margin-bottom: 36px;
+  }
+  .vbucks__blocks__block .left__count img {
+    height: 31px;
+    width: 29px;
+    margin-left: 74%;
+    margin-top: 0;
+  }
+  .vbucks__blocks__block .left__count h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .vbucks__blocks__block .left__count p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .vbucks__blocks__block .left__saleandprice {
+    margin-left: 25px;
+    margin-bottom: 18px;
+  }
+  .vbucks__blocks__block .left__saleandprice p {
+    font-size: 13px !important;
+    line-height: 16px !important;
+  }
+  .vbucks__blocks__block .left__saleandprice p span {
+    font-size: 10px !important;
+  }
+  .vbucks__blocks__block .right__img {
+    width: 205px;
+  }
+  .vbucks__blocks__block .right__btn .btn .img img {
+    height: 15.017643928527832px;
+    width: 13.353814125061035px;
+  }
+  .vbucks__blocks__block .right__btn .btn .text p {
+    font-size: 13px;
+  }
+  .vbucks__blocks__block .right__btn .btn .text img {
+    width: 13px;
+  }
+  .discount .form .input {
+    width: 330px;
+  }
+  .discount .form .btn {
+    width: 130px;
+  }
+  .discount .form .btn button p {
+    font-size: 17px;
+  }
+  .nav__links a {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fortnite-packages h2 {
+    font-size: 28px;
+  }
+  .fortnite-packages__blocks__block {
+    width: 320px;
+    height: 480px;
   }
 }
