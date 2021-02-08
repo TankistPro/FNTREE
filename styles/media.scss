@@ -474,6 +474,7 @@
     .special-block__title-main {
         text-align: center;
     }
+    
     .special-block__title-shadow {
         font-size: 8rem;
         left: 10%;
@@ -482,6 +483,15 @@
 }
 
 @media screen and (max-width: 600px) {
+    nav .nav-block .nav-items {
+        display: none;
+    }
+
+    .special-block__title-shadow {
+        font-size: 6.5rem;
+        top: -120%;
+    }
+
     .fortnite-packages {
         padding: 210px 0 70px 0;
 
@@ -535,6 +545,27 @@
 }
 
 @media screen and (max-width: 550px) {
+    .main-banner .slider-counter {
+        display: none;
+    }
+
+    .main-banner .banner-content {
+        top: 30%;
+        left: 10%;
+    }
+
+    .main-banner .banner-content__button {
+        margin-top: 20px;
+    }
+
+    .main-banner .banner-content__title {
+        font-size: 2.5rem;
+    }
+
+    .main-banner .banner-content__text {
+        max-width: 85%;
+    }
+
     .fortnite-packages {
         & h2 {
             font-size: 32px;
@@ -661,6 +692,36 @@
     }
 }
 
+@media screen and (max-width: 530px) { 
+    .special-block__items-item__content__price .price-block {
+        margin-left: 0;
+    }
+
+    .special-block__items-item__content__price .price-block p {
+        font-size: 0.875rem;
+    }
+
+    .special-block__items-item__content__val .value {
+        font-size: 1.875rem;
+    }
+
+    .special-block__items-item__content__val .sub {
+        font-size: 0.75rem;
+    }
+
+    .special-block__items-item {
+        padding: 25px 0 28px 31px;
+    }
+
+    .special-block__items-item__content__img {
+        text-align: end;
+    }
+
+    .special-block__items-item__content__val {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .fortnite-packages {
         & h2 {
@@ -671,5 +732,18 @@
             width: 320px;
             height: 480px;
         }
+    }
+
+    .special-block__title-shadow {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    .special-block__title-shadow {
+        font-size: 5.5rem;
+        top: -92%;
     }
 }
