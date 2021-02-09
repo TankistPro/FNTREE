@@ -404,6 +404,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  nav .nav-block .nav-items {
+    display: none;
+  }
+  .special-block__title-shadow {
+    font-size: 6.5rem;
+    top: -120%;
+  }
   .fortnite-packages {
     padding: 210px 0 70px 0;
   }
@@ -445,6 +452,22 @@
 }
 
 @media screen and (max-width: 550px) {
+  .main-banner .slider-counter {
+    display: none;
+  }
+  .main-banner .banner-content {
+    top: 30%;
+    left: 10%;
+  }
+  .main-banner .banner-content__button {
+    margin-top: 20px;
+  }
+  .main-banner .banner-content__title {
+    font-size: 2.5rem;
+  }
+  .main-banner .banner-content__text {
+    max-width: 85%;
+  }
   .fortnite-packages h2 {
     font-size: 32px;
   }
@@ -530,6 +553,30 @@
   }
 }
 
+@media screen and (max-width: 530px) {
+  .special-block__items-item__content__price .price-block {
+    margin-left: 0;
+  }
+  .special-block__items-item__content__price .price-block p {
+    font-size: 0.875rem;
+  }
+  .special-block__items-item__content__val .value {
+    font-size: 1.875rem;
+  }
+  .special-block__items-item__content__val .sub {
+    font-size: 0.75rem;
+  }
+  .special-block__items-item {
+    padding: 25px 0 28px 31px;
+  }
+  .special-block__items-item__content__img {
+    text-align: end;
+  }
+  .special-block__items-item__content__val {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .fortnite-packages h2 {
     font-size: 28px;
@@ -538,167 +585,16 @@
     width: 320px;
     height: 480px;
   }
-  .vbucks__title p {
-    font-size: 28px;
-    line-height: 34px;
-    margin-bottom: 35px;
-  }
-  .discount h2 {
-    font-size: 28px;
-    line-height: 33px;
-  }
-  .discount p {
-    font-size: 14px;
-    line-height: 17px;
-  }
-  .discount .form .input {
-    -webkit-transform: skew(347deg);
-    width: 252px;
-    height: 42px;
-  }
-  .discount .form .input input {
-    padding: 13px 0 13px 31px;
-    font-size: 13px;
-    line-height: 16px;
-    webkit-transform: skew(15deg);
-  }
-  .discount .form .btn {
-    height: 25.714282989501953px;
-    width: 111.64693450927734px;
-    border-radius: 8px;
-  }
-  .discount .form .btn button p {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .discount .form .btn button img {
-    height: 7px;
-    width: 9px;
-  }
-  .nav {
-    padding-top: 100px;
-  }
-  .nav__logo {
-    position: absolute;
-    top: -75px;
-    background-image: url(../../img/footer/logo-500.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  .special-block__title-shadow {
     width: 100%;
-    height: 150px;
-    margin: 0;
-  }
-  .nav__links {
-    margin: 0 50px;
-  }
-  .nav__links a {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .nav__inf h3 {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .nav__inf p {
-    font-size: 10px;
-    line-height: 12px;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .nav__logo {
-    top: -60px;
+    left: 0;
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .fortnite-packages {
-    padding: 160px 0 30px 0;
-  }
-  .fortnite-packages h2 {
-    font-size: 22px;
-    line-height: 27px;
-  }
-  .fortnite-packages__blocks__block {
-    height: 379px;
-    width: 270px;
-  }
-  .fortnite-packages__blocks__block .sale {
-    font-size: 20px;
-    line-height: 25px;
-  }
-  .fortnite-packages__blocks__block .price .count {
-    font-size: 17px;
-    line-height: 21px;
-  }
-  .fortnite-packages__blocks__block .price .count span {
-    font-size: 17px;
-    margin-top: 0;
-  }
-  .fortnite-packages__blocks__block .price .buy .img img {
-    height: 15px;
-    width: 15px;
-  }
-  .fortnite-packages__blocks__block .price .buy .text p {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .vbucks__blocks__block .right__img {
-    width: 155px;
-    margin-top: 30px;
-  }
-  .vbucks__blocks__block .left__saleandprice .sale {
-    height: 29px;
-    width: 55px;
-  }
-  .vbucks__blocks__block .left__saleandprice .price {
-    height: 29px;
-    width: 54px;
-  }
-  .vbucks__blocks__block .left__saleandprice p {
-    margin: 2px !important;
-  }
-  .discount .form .btn {
-    width: 100px;
-  }
-  .nav {
-    padding-top: 70px;
-  }
-  .nav__logo {
-    top: -50px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .vbucks__blocks__block .right__btn .btn .text p {
-    margin-right: 6px;
-  }
-  .discount .form .btn {
-    margin-left: 75%;
-  }
-  .vbucks {
-    margin: 88px 18px 100px 18px;
-  }
-  .vbucks__title {
-    width: 100%;
-  }
-  .vbucks__title p {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .vbucks__blocks__block .right__btn .btn .text p {
-    font-size: 10px;
-  }
-  .vbucks__blocks__block .vbucks__blocks__block .left__saleandprice p {
-    font-size: 11px !important;
-  }
-  .discount .form .btn {
-    margin-left: 70%;
+  .special-block__title-shadow {
+    font-size: 5.5rem;
+    top: -92%;
   }
 }
