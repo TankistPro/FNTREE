@@ -587,6 +587,7 @@ nav .menu-burger-block .menu-burger {
   display: flex;
   height: 50px;
   width: 50%;
+  cursor: pointer;
 }
 
 .fortnite-packages__blocks__block .price .buy .img {
@@ -820,7 +821,6 @@ nav .menu-burger-block .menu-burger {
 
 .discount {
   background-image: url("../../img/footer/bg-discount.png");
-  background-size: cover;
   background-repeat: no-repeat;
   padding: 488px 564px 178px 811px;
 }
@@ -1177,7 +1177,7 @@ nav .menu-burger-block .menu-burger {
 .update-password__menu {
   width: 450px;
   height: 412px;
-  margin: 15% auto;
+  margin: 30vh auto;
   background: linear-gradient(226.45deg, #090115 9.84%, #180435 141.7%);
   border-radius: 10px;
   position: relative;
@@ -1270,11 +1270,11 @@ nav .menu-burger-block .menu-burger {
 .update-password-key__menu {
   width: 450px;
   height: 412px;
-  margin: 15% auto;
+  margin: 30vh auto;
   background: linear-gradient(226.45deg, #090115 9.84%, #180435 141.7%);
   border-radius: 10px;
   position: relative;
-  padding: 79px 59px 42px 59px;
+  padding: 79px 60px 42px 60px;
 }
 
 .update-password-key__menu .liana {
@@ -1304,8 +1304,8 @@ nav .menu-burger-block .menu-burger {
 }
 
 .update-password-key__menu .form {
-  margin-top: 60px;
-  margin-bottom: 36px;
+  margin-top: 36px;
+  margin-bottom: 26px;
 }
 
 .update-password-key__menu .form p {
@@ -1315,6 +1315,12 @@ nav .menu-burger-block .menu-burger {
   line-height: 21px;
   color: #FFFFFF;
   margin-bottom: 30px;
+}
+
+.update-password-key__menu .form p span {
+  color: #ff008a;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .update-password-key__menu .form .input {
@@ -1352,6 +1358,23 @@ nav .menu-burger-block .menu-burger {
   font-size: 20px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.update-password-key__menu .form input::-webkit-outer-spin-button, .update-password-key__menu .form input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.update-password-key__menu .key-wrong {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FF003D;
+  margin-bottom: 9px;
 }
 
 .update-password-key__menu button {

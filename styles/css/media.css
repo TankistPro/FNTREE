@@ -688,6 +688,35 @@
     font-size: 10px;
     line-height: 12px;
   }
+  .update-password__menu {
+    height: 362px;
+    width: 350px;
+    padding: 84px 31px 37px 31px;
+  }
+  .update-password__menu h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .update-password__menu .form {
+    margin-top: 46px;
+    margin-bottom: 36px;
+  }
+  .update-password-key__menu {
+    height: 362px;
+    width: 350px;
+    padding: 84px 31px 37px 31px;
+  }
+  .update-password-key__menu h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .update-password-key__menu .form {
+    margin-top: 23px;
+    margin-bottom: 7px;
+  }
+  .update-password-key__menu .key-wrong {
+    margin-bottom: 6px;
+  }
 }
 
 @media screen and (max-width: 475px) {
