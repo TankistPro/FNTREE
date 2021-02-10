@@ -693,6 +693,9 @@
 }
 
 @media screen and (max-width: 530px) { 
+    .special-block__items-item__content__price, .special-block__items-item__content {
+        margin-top: 15px;
+    }
     .special-block__items-item__content__price .price-block {
         margin-left: 0;
     }
@@ -858,6 +861,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .special-block {
+        max-width: 90%;
+    }
     .fortnite-packages {
         padding: 160px 0 30px 0;
 
@@ -900,6 +906,24 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .main-banner .banner-content {
+        top: 20%;
+    }
+    .special-block__items-item {
+        padding: 25px 0 28px 15px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .special-block__items-item__content__img {
+        max-width: 154px;
+    }
+    .special-block__items-item {
+        width: 100%;
     }
 }
 
@@ -958,6 +982,63 @@
                 margin-bottom: 50px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .special-block__items-item__offer {
+        font-size: 0.8125rem;
+        max-width: 147px;
+        padding: 5px 17px 0px 14px;
+    }
+    .main-banner {
+        margin: 0 auto 58px auto;
+    }
+    .main-banner .banner-content__title {
+        font-size: 1.5625rem;
+        line-height: 30px;
+    }
+    .main-banner .banner-content__text {
+        font-size: 0.8125rem;
+        line-height: 15px;
+        margin-top: 12px;
+    }
+    .main-banner .banner-content__button {
+        font-size: 0.9375rem;
+        line-height: 18px;
+        margin-top: 8px;
+    }
+    .main-banner .slider-arrow-right img {
+        height: 30px;
+    }
+    .main-banner .slider-arrow-right {
+        width: auto;
+        height: auto;
+        top: 55%;
+    }
+    .main-banner .slider-item {
+        max-height: 240px;
+        &.first {
+            background: url("../../img/main-banner/banner.png") top left -220px no-repeat;
+            background-size: cover;
+        }
+    }
+    .special-block__title-shadow {
+        top: -45%;
+        font-size: 3.75rem;
+    }
+    .special-block__title-main {
+        font-size: 1.75rem;
+    }
+    .special-block__title {
+        margin-bottom: 29px;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+    .special-block__items-item__button button {
+        font-size: 0.8125rem;
+        padding: 9px 10px 9px 43px;
     }
 }
 
