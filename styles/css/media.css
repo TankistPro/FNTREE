@@ -130,7 +130,7 @@
 
 @media screen and (max-width: 1380px) {
   .main-banner .slider-item.first {
-    background: url("../../img/main-banner/banner.png") top left -250px no-repeat;
+    background: url("../../img/main-banner/woman.png") bottom right 0%/447px no-repeat, url("../../img/main-banner/banner.png") bottom left -250px no-repeat;
   }
 }
 
@@ -179,7 +179,7 @@
 
 @media screen and (max-width: 1175px) {
   .main-banner .slider-item.first {
-    background: url("../../img/main-banner/banner.png") top left -360px no-repeat;
+    background: url("../../img/main-banner/woman.png") bottom right 0%/447px no-repeat, url("../../img/main-banner/banner.png") bottom left -360px no-repeat;
   }
 }
 
@@ -234,7 +234,11 @@
     margin-left: 10px;
   }
   .main-banner .slider-item.first {
+    height: 483px;
     background: url("../../img/main-banner/banner.png") top left -460px no-repeat;
+  }
+  .main-banner .banner-img {
+    top: -10%;
   }
 }
 
@@ -393,6 +397,10 @@
 }
 
 @media screen and (max-width: 665px) {
+  .main-banner .banner-img {
+    width: 300px;
+    top: -7%;
+  }
   .special-block__title-main {
     text-align: center;
   }
@@ -554,6 +562,9 @@
 }
 
 @media screen and (max-width: 530px) {
+  .special-block__items-item__content__val .value::after {
+    right: 48%;
+  }
   .special-block__items-item__content__price, .special-block__items-item__content {
     margin-top: 15px;
   }
@@ -562,6 +573,12 @@
   }
   .special-block__items-item__content__price .price-block p {
     font-size: 0.875rem;
+  }
+  .special-block__items-item__content__price .price-discount p, .special-block__items-item__content__price .price-block p {
+    font-size: 0.9375rem;
+  }
+  .special-block__items-item__content__price .price-discount-size, .special-block__items-item__content__price .price-block-size {
+    font-size: 0.775rem;
   }
   .special-block__items-item__content__val .value {
     font-size: 1.875rem;
@@ -593,16 +610,6 @@
     left: 0;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 450px) {
-  .special-block__title-shadow {
-    font-size: 5.5rem;
-    top: -92%;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .fortnite-packages h2 {
     font-size: 28px;
   }
@@ -683,9 +690,16 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
   .special-block {
     max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .special-block__title-shadow {
+    font-size: 5.5rem;
+    top: -92%;
   }
   .fortnite-packages {
     padding: 160px 0 30px 0;
@@ -730,6 +744,13 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .main-banner .banner-img {
+    width: 200px;
+    top: -5%;
+  }
+}
+
 @media screen and (max-width: 415px) {
   .special-block__items-item__content__img {
     max-width: 154px;
@@ -767,6 +788,9 @@
 }
 
 @media screen and (max-width: 380px) {
+  nav {
+    margin-bottom: 40px;
+  }
   .vbucks__blocks__block .right__btn .btn .text p {
     margin-right: 6px;
   }
@@ -785,6 +809,10 @@
 }
 
 @media screen and (max-width: 378px) {
+  .main-banner .banner-img {
+    width: 150px;
+    top: -8%;
+  }
   .special-block__items-item__offer {
     font-size: 0.8125rem;
     max-width: 147px;

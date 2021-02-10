@@ -16,6 +16,7 @@ body {
 
 nav {
     background-color: #ffffff;
+    margin-bottom: 85px;
 
     .nav-block {
         display: flex;
@@ -23,7 +24,7 @@ nav {
         justify-content: space-between;
         width: 90%;
         height: 82px;
-        margin: 0 0 33px auto;
+        margin: 0 0 0 auto;
 
         &-logo {}
 
@@ -229,9 +230,17 @@ nav {
 
         &.first {
             width: 100%;
-            height: 483px;
-            background: url("../../img/main-banner/banner.png") no-repeat;
+            height: 530px;
+            background: url("../../img/main-banner/woman.png") bottom  right 10% /447px no-repeat, 
+                        url("../../img/main-banner/banner.png") bottom no-repeat;
+            background-size: auto;
         }
+    }
+
+    .banner-img {
+        position: absolute;
+        top: 0%;
+        left: 0;
     }
 
     .banner-content {
@@ -393,8 +402,6 @@ nav {
 
                         &::after {
                             content: url("../../img/special-offer/dots.svg");
-                            width: 25px;
-                            height: 25px;
                             position: absolute;
                             top: 0;
                             right: 29%;
