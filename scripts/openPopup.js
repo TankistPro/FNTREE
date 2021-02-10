@@ -1,13 +1,18 @@
 // =============LogIN & SignIn=================
+const openSignPopup = () => {
+    signInPopup.style.display = "flex";
+}
+
 const navButton = document.querySelector(".nav-block__right-btn"),
+    userIcon = document.querySelector(".block-in"),
     loginPopup = document.querySelector(".login"),
     signInPopup = document.querySelector(".signin"),
     links = document.querySelectorAll(".modal-block__header-link"),
     closePopupIcons = document.querySelectorAll(".modal-block__close");
 
-navButton.addEventListener("click", () => {
-    signInPopup.style.display = "flex";
-});
+navButton.addEventListener("click", openSignPopup);
+
+userIcon.addEventListener("click", openSignPopup);
 
 closePopupIcons.forEach(icon => {
     icon.addEventListener("click", () => {
