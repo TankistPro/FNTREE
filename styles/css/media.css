@@ -252,7 +252,7 @@
   nav .nav-block__right {
     display: none;
   }
-  nav .nav-block .menu-icon {
+  nav .nav-block .block-in {
     display: block;
   }
 }
@@ -411,10 +411,16 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 615px) {
   nav .nav-block .nav-items {
     display: none;
   }
+  nav .nav-block .menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .special-block__title-shadow {
     font-size: 6.5rem;
     top: -120%;

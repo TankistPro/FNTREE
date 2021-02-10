@@ -19,6 +19,10 @@ nav {
   margin-bottom: 85px;
 }
 
+nav .block-in {
+  display: none;
+}
+
 nav .nav-block {
   display: flex;
   align-items: center;
@@ -29,7 +33,6 @@ nav .nav-block {
 }
 
 nav .nav-block .menu-icon {
-  transform: rotate(180deg);
   display: none;
 }
 

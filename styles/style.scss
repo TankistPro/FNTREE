@@ -18,6 +18,10 @@ nav {
     background-color: #ffffff;
     margin-bottom: 85px;
 
+    .block-in {
+        display: none;
+    }
+
     .nav-block {
         display: flex;
         align-items: center;
@@ -29,7 +33,6 @@ nav {
         &-logo {}
 
         .menu-icon {
-            transform: rotate(180deg);
             display: none;
         }
 
