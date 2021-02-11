@@ -313,7 +313,7 @@
             <div class="form">
                 <div class="input"><input type="text" placeholder="Enter your email..."></div>
                 <div class="btn">
-                    <button>
+                    <button name="submit">
                         <p>SUBMIT</p>
                         <img src="./img/footer/send.svg" alt="">
                     </button>
@@ -438,7 +438,7 @@
             <img src="./img/popup/cancel.svg" class="close" alt="cancel">
             <h2><span>Update</span> password</h2>      
             <form action="" class="form">
-                <p>A password reset code has been sent to example@gmail.com</p>
+                <p>A password reset code has been sent to <span>example@gmail.com</span></p>
                 <div class="input">
                     <input type="number">
                     <input type="number">
@@ -447,6 +447,7 @@
                     <input type="number">
                 </div>
             </form>
+            <div class="key-wrong">Wrong code entered!</div>
             <button>ENTER CODE</button>
         </div>
     </div>
@@ -454,5 +455,6 @@
     <script src="./scripts/openMenu.js"></script>
     <script src="./scripts/openPopup.js"></script>
     <script src="./scripts/update-password.js"></script>
+    <script src="./scripts/submit.js"></script>
 </body>
 </html>

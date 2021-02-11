@@ -872,6 +872,42 @@
             }
         }
     }
+
+    .update-password__menu {
+        height: 362px;
+        width: 350px;
+        padding: 84px 31px 37px 31px;
+
+        & h2 {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        & .form {
+            margin-top: 46px;
+            margin-bottom: 36px;
+        }
+    }
+
+    .update-password-key__menu {
+        height: 362px;
+        width: 350px;
+        padding: 84px 31px 37px 31px;
+
+        & h2 {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        & .form {
+            margin-top: 23px;
+            margin-bottom: 7px;
+        }
+
+        & .key-wrong {
+            margin-bottom: 6px;
+        }
+    }
 }
 
 @media screen and (max-width: 475px) {

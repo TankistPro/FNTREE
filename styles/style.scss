@@ -655,6 +655,7 @@ nav {
                     display: flex;
                     height: 50px;
                     width: 50%;
+                    cursor: pointer;
 
                     & .img {
                         width: 20%;
@@ -892,7 +893,7 @@ nav {
 }
 .discount {
     background-image: url("../../img/footer/bg-discount.png");
-    background-size: cover;
+    // background-size: cover;
     background-repeat: no-repeat;
     padding: 488px 564px 178px 811px;
 
@@ -1257,7 +1258,7 @@ nav {
     &__menu {
         width: 450px;
         height: 412px;
-        margin: 15% auto;
+        margin: 30vh auto;
         background: linear-gradient(226.45deg, #090115 9.84%, #180435 141.7%);
         border-radius: 10px;
         position: relative;
@@ -1353,11 +1354,11 @@ nav {
     &__menu {
         width: 450px;
         height: 412px;
-        margin: 15% auto;
+        margin: 30vh auto;
         background: linear-gradient(226.45deg, #090115 9.84%, #180435 141.7%);
         border-radius: 10px;
         position: relative;
-        padding: 79px 59px 42px 59px;
+        padding: 79px 60px 42px 60px;
 
         & .liana {
             position: absolute;
@@ -1387,8 +1388,8 @@ nav {
         }
 
         & .form {
-            margin-top: 60px;
-            margin-bottom: 36px;
+            margin-top: 36px;
+            margin-bottom: 26px;
 
             & p {
                 font-style: normal;
@@ -1397,6 +1398,12 @@ nav {
                 line-height: 21px;
                 color: #FFFFFF;
                 margin-bottom: 30px;
+
+                span {
+                    color: rgb(255, 0, 138);
+                    font-weight: 500;
+                    font-size: 18px;
+                }
             }
 
             & .input {
@@ -1436,7 +1443,24 @@ nav {
                 font-size: 20px;
                 line-height: 24px;
                 color: #FFFFFF;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    /* display: none; <- Crashes Chrome on hover */
+                    -webkit-appearance: none;
+                    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                }
             }
+        }
+
+        & .key-wrong {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #FF003D;
+            margin-bottom: 9px;
         }
 
         & button {
