@@ -9,3 +9,135 @@
     max-height: 610px;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .header__links {
+    margin-left: 88px;
+  }
+  .header__language {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .popop-change-password__block {
+    width: 352px;
+    height: 513px;
+    padding: 62px 39px 39px 39px;
+  }
+  .popop-change-password__block .close {
+    width: 21px;
+    height: 21px;
+  }
+  .popop-change-password__block .current-password p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .popop-change-password__block .current-password__input .input input {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .popop-change-password__block .current-password__input .input input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .popop-change-password__block .current-password__input .input img {
+    height: 22px;
+    width: 22px;
+  }
+  .popop-change-password__block .current-password .wrong .wrong__text p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .popop-change-password__block .confirm-password {
+    margin-top: 46px;
+    margin-bottom: 40px;
+  }
+  .popop-change-password__block .confirm-password p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .popop-change-password__block .confirm-password .input {
+    padding: 4px 0;
+  }
+  .popop-change-password__block .confirm-password .input input {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .popop-change-password__block .confirm-password .input img {
+    width: 22px;
+    height: 22px;
+  }
+  .popop-change-password__block .change {
+    height: 45px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .popop-enter-code__block {
+    width: 353px;
+    height: 233px;
+    padding: 45px 39px 35px 39px;
+  }
+  .popop-enter-code__block .close {
+    width: 21px;
+    height: 21px;
+  }
+  .popop-enter-code__block p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .popop-enter-code__block__input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .popop-enter-code__block__input .input input {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .popop-enter-code__block__input .wrong__text p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 6px;
+    margin-bottom: 25px;
+  }
+  .popop-enter-code__block button {
+    height: 44px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .popop-enter-email__block {
+    width: 353px;
+    height: 233px;
+    padding: 45px 39px 35px 39px;
+  }
+  .popop-enter-email__block .close {
+    width: 21px;
+    height: 21px;
+  }
+  .popop-enter-email__block p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .popop-enter-email__block__input {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .popop-enter-email__block__input .input input {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .popop-enter-email__block__input .input input::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .popop-enter-email__block__input .wrong__text {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 6px;
+  }
+  .popop-enter-email__block button {
+    height: 44px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

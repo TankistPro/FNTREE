@@ -10,7 +10,7 @@ btn_closeUpdatePas.addEventListener('click', () => closeUpdatePas());
 btn_sendCode.addEventListener('click', () => openUpdatePasKey());
 
 function openUpdatePas() {
-    window_updatePas.style.display = 'block';
+    window_updatePas.style.display = 'flex';
     window_login.style.display = 'none';
 }
 
@@ -20,7 +20,7 @@ function closeUpdatePas() {
 
 function openUpdatePasKey() {
     window_updatePas.style.display = 'none';
-    window_upadatePasKey.style.display = 'block';
+    window_upadatePasKey.style.display = 'flex';
 }
 
 const list_input = window_upadatePasKey.getElementsByClassName('form')[0].getElementsByTagName('input');

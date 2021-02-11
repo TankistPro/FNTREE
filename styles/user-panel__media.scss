@@ -9,3 +9,167 @@
         max-height: 610px;
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .header__links {
+        margin-left: 88px;
+    }
+
+    .header__language {
+        margin-right: 88px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .popop-change-password__block {
+        width: 352px;
+        height: 513px;
+        padding: 62px 39px 39px 39px;
+
+        & .close {
+            width: 21px;
+            height: 21px;
+        }
+
+        & .current-password {
+            & p {
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            &__input .input {
+                & input {
+                    font-size: 22px;
+                    line-height: 26px;
+
+                    &::placeholder {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+
+                & img {
+                    height: 22px;
+                    width: 22px;
+                }
+            }
+
+            & .wrong .wrong__text p{
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        .confirm-password {
+            margin-top: 46px;
+            margin-bottom: 40px;
+
+            & p {
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            & .input {
+                padding: 4px 0;
+
+                & input {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                & img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+
+        & .change {
+            height: 45px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    .popop-enter-code__block {
+        width: 353px;
+        height: 233px;
+        padding: 45px 39px 35px 39px;
+
+        & .close {
+            width: 21px;
+            height: 21px;
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        &__input {
+            margin-top: 20px;
+            margin-bottom: 10px;
+
+            & .input input {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            & .wrong__text p {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 6px;
+                margin-bottom: 25px;
+            }
+        }
+
+        & button {
+            height: 44px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+
+    .popop-enter-email__block {
+        width: 353px;
+        height: 233px;
+        padding: 45px 39px 35px 39px;
+
+        & .close {
+            width: 21px;
+            height: 21px;
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 21px;
+        }
+
+        &__input {
+            margin-top: 20px;
+            margin-bottom: 25px;
+
+            & .input input {
+                font-size: 20px;
+                line-height: 24px;
+
+                &::placeholder {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            & .wrong__text {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 6px;
+            }
+        }
+
+        & button {
+            height: 44px;
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
+}

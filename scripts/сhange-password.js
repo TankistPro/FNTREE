@@ -8,7 +8,7 @@ btn_closeChangePas.addEventListener('click', () => closeChangePas());
 btn_changeChangePas.addEventListener('click', () => changeChangePas());
 
 function openChangePas() {
-    window_changePas.style.display = 'block';
+    window_changePas.style.display = 'flex';
 }
 
 function closeChangePas() {
@@ -25,7 +25,7 @@ btn_closeEnterCode.addEventListener('click', () => closeEnterCode());
 
 function changeChangePas() {
     window_changePas.style.display = 'none';
-    window_enterCode.style.display = 'block';
+    window_enterCode.style.display = 'flex';
 }
 
 function closeEnterCode() {

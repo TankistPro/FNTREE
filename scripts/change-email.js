@@ -8,7 +8,7 @@ btn_closeChangeEmail.addEventListener('click', () => closeChangeEmail());
 btn_enterChangeEmail.addEventListener('click', () => closeChangeEmail());
 
 function openChangeEmail() {
-    window_changeEmail.style.display = 'block';
+    window_changeEmail.style.display = 'flex';
 }
 
 function closeChangeEmail() {
