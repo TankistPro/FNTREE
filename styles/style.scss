@@ -14,6 +14,89 @@ body {
     font-weight: bold;
 }
 
+.wrapper {
+    z-index: 1000;
+}
+.menu-burger-block {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    background-color: #F9F9F9;
+    transition: .3s all;
+    padding-bottom: 10px;
+
+    max-width: 288px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+
+    &__logo {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__content {
+        padding: 24px 22px 0 30px;
+    }
+    
+    &__title {
+        font-size: 1.5625rem;
+        color: #000000;
+        font-weight: 500;
+        line-height: 29px;
+        padding-bottom: 13px;
+        border-bottom: 1px  solid #F6F6F6;
+    }
+
+    &__list {
+        margin-top: 34px;
+
+        &-item {
+            text-transform: uppercase;
+            color: #000000;
+            font-size: 1.0625rem;
+            font-weight: 500;
+            line-height: 25px;
+            cursor: pointer;
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                content: url("../../img/nav/dote.svg");
+                position: absolute;
+                top: -12%;
+                left: 0;
+                width: 15px;
+                height: 15px;
+                vertical-align: middle;
+            }
+
+            &:not(:first-child) {
+                margin-top: 17px;
+            }
+
+            &:hover {
+                transition: .2s all;
+                color: #E72487;
+                
+                &::before {
+                    content: url("../../img/nav/list-img.svg");
+                    position: absolute;
+                    top: 10%;
+                    left: -1%;
+                    width: 15px;
+                    height: 15px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
 nav {
     background-color: #ffffff;
     margin-bottom: 85px;
@@ -138,30 +221,6 @@ nav {
                 width: 85%;
             }
         }   
-    }
-
-    .menu-burger-block {
-        z-index: 10;
-        position: absolute;
-        top: -50%;
-        left: 0;
-        right: 0;
-        background-color: #F9F9F9;
-        transition: .3s all;
-        padding-bottom: 10px;
-        border-radius: 10px;
-
-        .close-menu {
-            display: block;
-            margin: 20px 20px 20px auto;
-        }
-
-        .menu-burger {
-            display: flex;
-            justify-content: space-between;
-            width: 96%;
-            margin: auto;
-        }
     }
 }
 
