@@ -10,9 +10,25 @@
     <link rel="stylesheet" href="./styles/css/media.css">
 </head>
 <body>
+    <div class="menu-burger-block">
+        <div class="menu-burger-block__content">
+           <h1 class="menu-burger-block__title">Navigation</h1>
+           <ul class="menu-burger-block__list">
+               <li class="menu-burger-block__list-item">Home</li>
+               <li class="menu-burger-block__list-item">Special offer</li>
+               <li class="menu-burger-block__list-item">Vbucks</li>
+               <li class="menu-burger-block__list-item">Fortnite packages</li>
+           </ul>
+           <a href="#" class="menu-burger-block__logo">
+                <img src="./img/nav/logo.png" alt="logo">
+           </a>  
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="overlay"></div>
     <nav>
         <div class="nav-block">
-            <div class="menu-icon">
+            <div class="menu-icon">     
                 <img src="./img/nav/menu-burger.svg" alt="menu">
             </div>
             <a href="#" class="nav-block__logo"><img src="./img/nav/logo.png" alt="logo"></a>
@@ -30,16 +46,6 @@
             </div>
             <div class="block-in">
                 <img src="./img/nav/userIn.svg" alt="sign in">
-            </div>
-        </div>
-        <div class="menu-burger-block">
-            <img src="./img/nav/close.svg" class="close-menu" alt="close">
-            <div class="nav-block__right menu-burger">
-                <div class="nav-block__right-options">
-                    <p>EN</p>
-                    <p>USD</p>
-                </div>
-                <button class="nav-block__right-btn">SIGN IN</button>
             </div>
         </div>
     </nav>
@@ -445,6 +451,7 @@
             <div class="key-wrong">Wrong code entered!</div>
             <button>ENTER CODE</button>
         </div>
+    </div>
     </div>
     <script src="./scripts/openMenu.js"></script>
     <script src="./scripts/openPopup.js"></script>
