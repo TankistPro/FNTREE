@@ -10,14 +10,35 @@
     <title>User-panel</title>
 </head>
 <body>
+    <div class="header-nav" style="display: none;">
+        <div class="header-nav__main">
+            <div class="">
+                <div class="header-nav__main__head">
+                    <p>Navigation</p>
+                </div>
+                <div class="header-nav__main__list">
+                    <ul>
+                        <li>HOME</li>
+                        <li>HISTORY</li>
+                        <li>SPECIAL OFFERS</li>
+                        <li>VBUCKS</li>
+                        <li>FORTNITE PACKAGES</li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="header-nav__main__logo"><img src="./img/nav/logo.png" alt=""></div>
+        </div>
+        <div class="header-nav__close"></div>
+    </div>
     <div class="header">
+        <div class="header-open_nav"><img src="./img/user-panel/open-nav.svg" alt=""></div>
         <img src="./img/nav/logo.png" alt="logo" class="header__logo">
         <div class="header__links">
             <div class="history link">HISTORY</div>
             <div class="vbucks link">VBUCKS</div>
             <div class="vk-page link">VK PAGE</div>
         </div>
-        <div style="display: flex;">
+        <div class="lananduser">
             <div class="header__language">
                 <p class="main">EN</p>
                 <img src="./img/user-panel/open.svg" alt="open" class="open">
@@ -49,6 +70,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="header-open_user">
+            <img src="https://sun9-60.userapi.com/impf/c855420/v855420149/aeef9/AJ2U6OFs2E0.jpg?size=1080x962&quality=96&proxy=1&sign=5aa54e6c07ed9f06a690d2ec7be52025&type=album" alt="">
         </div>
     </div>
     <main>
@@ -326,6 +350,36 @@
             </table>
         </div>
     </main>
+    <div class="header-user" style="display: none;">
+        <div class="header-user__close"></div>
+        <div class="header-user__main">
+            <div class="">
+                <div class="header-user__main__head">
+                    <p>Edgar Ordyan</p>
+                </div>
+                <div class="header-user__main__list">
+                    <div class="item">
+                        <img src="./img/user-panel/chang-pas.svg" alt="">
+                        <p>Change password</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/user-panel/chang-em.svg" alt="">
+                        <p>Change email</p>
+                    </div>
+                    <div class="item">
+                        <img src="./img/user-panel/withdraw.svg" alt="">
+                        <p>Withdraw</p>
+                    </div>
+                </div>
+            </div>
+            <div class="header-user__main__exit">
+                <svg width="16" height="20" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.333374 9C0.333374 9.22101 0.421172 9.43297 0.577452 9.58925C0.733732 9.74553 0.945694 9.83333 1.16671 9.83333H7.49171L5.57504 11.7417C5.49693 11.8191 5.43494 11.9113 5.39263 12.0128C5.35032 12.1144 5.32854 12.2233 5.32854 12.3333C5.32854 12.4433 5.35032 12.5523 5.39263 12.6538C5.43494 12.7554 5.49693 12.8475 5.57504 12.925C5.65251 13.0031 5.74468 13.0651 5.84623 13.1074C5.94778 13.1497 6.0567 13.1715 6.16671 13.1715C6.27672 13.1715 6.38564 13.1497 6.48719 13.1074C6.58874 13.0651 6.6809 13.0031 6.75837 12.925L10.0917 9.59166C10.1676 9.51241 10.227 9.41896 10.2667 9.31666C10.3501 9.11378 10.3501 8.88621 10.2667 8.68333C10.227 8.58104 10.1676 8.48758 10.0917 8.40833L6.75837 5.075C6.68067 4.9973 6.58843 4.93566 6.48691 4.89361C6.3854 4.85156 6.27659 4.82992 6.16671 4.82992C6.05682 4.82992 5.94802 4.85156 5.8465 4.89361C5.74498 4.93566 5.65274 4.9973 5.57504 5.075C5.49734 5.1527 5.43571 5.24494 5.39366 5.34646C5.35161 5.44797 5.32996 5.55678 5.32996 5.66666C5.32996 5.77655 5.35161 5.88535 5.39366 5.98687C5.43571 6.08839 5.49734 6.18063 5.57504 6.25833L7.49171 8.16666H1.16671C0.945694 8.16666 0.733732 8.25446 0.577452 8.41074C0.421172 8.56702 0.333374 8.77898 0.333374 9ZM11.1667 0.666664H2.83337C2.17033 0.666664 1.53445 0.930056 1.06561 1.3989C0.596766 1.86774 0.333374 2.50362 0.333374 3.16666V5.66666C0.333374 5.88768 0.421172 6.09964 0.577452 6.25592C0.733732 6.4122 0.945694 6.5 1.16671 6.5C1.38772 6.5 1.59968 6.4122 1.75596 6.25592C1.91224 6.09964 2.00004 5.88768 2.00004 5.66666V3.16666C2.00004 2.94565 2.08784 2.73369 2.24412 2.57741C2.4004 2.42113 2.61236 2.33333 2.83337 2.33333H11.1667C11.3877 2.33333 11.5997 2.42113 11.756 2.57741C11.9122 2.73369 12 2.94565 12 3.16666V14.8333C12 15.0543 11.9122 15.2663 11.756 15.4226C11.5997 15.5789 11.3877 15.6667 11.1667 15.6667H2.83337C2.61236 15.6667 2.4004 15.5789 2.24412 15.4226C2.08784 15.2663 2.00004 15.0543 2.00004 14.8333V12.3333C2.00004 12.1123 1.91224 11.9004 1.75596 11.7441C1.59968 11.5878 1.38772 11.5 1.16671 11.5C0.945694 11.5 0.733732 11.5878 0.577452 11.7441C0.421172 11.9004 0.333374 12.1123 0.333374 12.3333V14.8333C0.333374 15.4964 0.596766 16.1323 1.06561 16.6011C1.53445 17.0699 2.17033 17.3333 2.83337 17.3333H11.1667C11.8297 17.3333 12.4656 17.0699 12.9345 16.6011C13.4033 16.1323 13.6667 15.4964 13.6667 14.8333V3.16666C13.6667 2.50362 13.4033 1.86774 12.9345 1.3989C12.4656 0.930056 11.8297 0.666664 11.1667 0.666664Z" fill="black"/>
+                </svg>
+                <p>Exit</p>
+            </div>
+        </div>
+    </div>
     <div class="popop-change-password" style="display: none;">
         <div class="popop-change-password__block">
             <img src="./img/user-panel/close.svg" alt="" class="close">
@@ -385,5 +439,6 @@
     <script src="./scripts/openUser.js"></script>
     <script src="./scripts/сhange-password.js"></script>
     <script src="./scripts/change-email.js"></script>
+    <script src="./scripts/NavAndUser.js"></script>
 </body>
 </html>

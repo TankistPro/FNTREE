@@ -943,7 +943,7 @@ nav {
                 padding: 23px 67px;
                 -webkit-transform: skew(20deg);
                 font-style: normal;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 20px;
                 line-height: 24px;
                 color: #fff;
@@ -951,7 +951,7 @@ nav {
     
                 &::placeholder {
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 500;
                     color: rgba(255, 255, 255, 0.46);
                 }
             }
@@ -960,9 +960,9 @@ nav {
         & .btn {
             width: 187px;
             height: 50px;
-            -webkit-transform: skew(316deg);
+            -webkit-transform: skew(336deg);
             background: #FF005C;
-            border-radius: 8px;
+            border-radius: 6px 8px;
             position: absolute;
             margin-left: 70%;
             cursor: pointer;
@@ -976,7 +976,7 @@ nav {
                 outline: none;
                 border: none;
                 background: none;
-                -webkit-transform: skew(45deg);
+                -webkit-transform: skew(23deg);
 
                 & p {
                     font-style: normal;

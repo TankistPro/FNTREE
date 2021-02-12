@@ -10,6 +10,36 @@
     }
 }
 
+@media screen and (max-width: 960px) {
+    .header {
+        align-items: center;
+
+        &__links {
+            display: none;
+        }
+
+        & .lananduser {
+            display: none;
+        }
+
+        &__language {
+            display: none;
+        }
+
+        &__user {
+            display: none;
+        }
+
+        &-open_user {
+            display: flex;
+        }
+
+        &-open_nav {
+            display: flex;
+        }
+    }
+}
+
 @media screen and (max-width: 1100px) {
     .header__links {
         margin-left: 88px;
