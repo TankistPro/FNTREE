@@ -170,6 +170,15 @@ nav {
                 overflow: hidden;
                 padding-left: 0;
                 margin-left: 85px;
+
+                &:hover {
+                    background: #B20060;
+                    transition: .3s all;
+
+                    &::after {
+                        content: url("../../img/nav/btn-effect-h.png");
+                    }
+                }
                 
                 &::before, &::after {
                     vertical-align: middle;
@@ -256,6 +265,21 @@ nav {
         position: absolute;
         top: 40%;
         left: 3%;
+        z-index: 1;
+
+        &:hover {
+            & p {
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            & .active {
+                color: #fff;
+            }
+
+            & div:first-child {
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+        }
 
         &__top,&__bottom {
             color:rgba(255, 255, 255, 0.25);
@@ -344,9 +368,14 @@ nav {
             text-transform: uppercase;
             line-height: 24px;
             font-size: 1.25rem;
-            font-weight: 600;
+            font-weight: 500;
             margin-top: 48px;
             position: relative;
+            transition: .3s all;
+
+            &:hover {
+                background: #B20060;
+            }
 
             &::before {
                 content: "+";
@@ -378,15 +407,31 @@ nav {
             cursor: pointer;
             width: 50px;
             height: 50px;
+
+            &:hover {
+                & svg path{
+                    fill: #B20060;
+                }
+            }
         }
 
         &__left {
             background: url('../../img/main-banner/arrow-left-bg.svg') no-repeat;
+            padding: 4px 0 0 5px;
+
+            &:hover {
+                background: url('../../img/main-banner/arrow-left-bg-h.svg') no-repeat;
+            }
         }
 
         &__right {
             margin-left: 8px;
+            padding: 4px 5px 0 0;
             background: url('../../img/main-banner/arrow-right-bg.svg') no-repeat;
+
+            &:hover {
+                background: url('../../img/main-banner/arrow-right-bg-h.svg') no-repeat;
+            }
         }
     }
 }
@@ -544,7 +589,12 @@ nav {
                     outline: none;
                     border: none;
                     padding: 15px 12px 15px 49px;
+                    transition: .3s all;
                     background-color: #FF008A;
+
+                    &:hover {
+                        background: #B20060;
+                    }
 
                     &::after {
                         content: url("../../img/special-offer/arrow-right.svg");
@@ -679,6 +729,11 @@ nav {
                         align-items: center;
                         justify-content: center;
                         background: #FF008A;
+                        transition: .3s all;
+
+                        &:hover {
+                            background: #B20060;
+                        }
 
                         & p {
                             font-style: normal;
@@ -883,6 +938,11 @@ nav {
                             align-items: center;
                             justify-content: center;
                             background: #FF005C;
+                            transition: .3s all;
+
+                            &:hover {
+                                background: #BF0045;
+                            }
 
                             & p {
                                 font-style: normal;
@@ -966,8 +1026,20 @@ nav {
             position: absolute;
             margin-left: 70%;
             cursor: pointer;
+            transition: .3s all;
+
+            &:hover {
+                transition: .3s all;
+                transform: scale(1.1);
+
+                & button {
+                    transition: .3s all;
+                    transform: scale(1.1);
+                }
+            }
 
             & button {
+                transition: .3s all;
                 width: 100%;
                 height: 100%;
                 display: flex;
@@ -1051,6 +1123,7 @@ nav {
 // =========================ModalPopup==========================
 .modal-wrapper {
     position: fixed;
+    z-index: 2;
     top: 0;
     bottom: 0;
     left: 0;
@@ -1434,7 +1507,7 @@ nav {
                     padding: 7px 16px;
     
                     font-style: normal;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 20px;
                     line-height: 24px;
                     color: #000;

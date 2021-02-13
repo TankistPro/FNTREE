@@ -171,6 +171,15 @@ nav .nav-block__right-btn {
   margin-left: 85px;
 }
 
+nav .nav-block__right-btn:hover {
+  background: #B20060;
+  transition: .3s all;
+}
+
+nav .nav-block__right-btn:hover::after {
+  content: url("../../img/nav/btn-effect-h.png");
+}
+
 nav .nav-block__right-btn::before, nav .nav-block__right-btn::after {
   vertical-align: middle;
 }
@@ -251,6 +260,19 @@ nav .nav-items .item:hover::after {
   position: absolute;
   top: 40%;
   left: 3%;
+  z-index: 1;
+}
+
+.main-banner .slider-counter:hover p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-banner .slider-counter:hover .active {
+  color: #fff;
+}
+
+.main-banner .slider-counter:hover div:first-child {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .main-banner .slider-counter__top, .main-banner .slider-counter__bottom {
@@ -335,9 +357,14 @@ nav .nav-items .item:hover::after {
   text-transform: uppercase;
   line-height: 24px;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 48px;
   position: relative;
+  transition: .3s all;
+}
+
+.main-banner .banner-content__button:hover {
+  background: #B20060;
 }
 
 .main-banner .banner-content__button::before {
@@ -371,13 +398,27 @@ nav .nav-items .item:hover::after {
   height: 50px;
 }
 
+.main-banner .arrows-block__left:hover svg path, .main-banner .arrows-block__right:hover svg path {
+  fill: #B20060;
+}
+
 .main-banner .arrows-block__left {
   background: url("../../img/main-banner/arrow-left-bg.svg") no-repeat;
+  padding: 4px 0 0 5px;
+}
+
+.main-banner .arrows-block__left:hover {
+  background: url("../../img/main-banner/arrow-left-bg-h.svg") no-repeat;
 }
 
 .main-banner .arrows-block__right {
   margin-left: 8px;
+  padding: 4px 5px 0 0;
   background: url("../../img/main-banner/arrow-right-bg.svg") no-repeat;
+}
+
+.main-banner .arrows-block__right:hover {
+  background: url("../../img/main-banner/arrow-right-bg-h.svg") no-repeat;
 }
 
 .special-block {
@@ -534,7 +575,12 @@ nav .nav-items .item:hover::after {
   outline: none;
   border: none;
   padding: 15px 12px 15px 49px;
+  transition: .3s all;
   background-color: #FF008A;
+}
+
+.special-block__items-item__button button:hover {
+  background: #B20060;
 }
 
 .special-block__items-item__button button::after {
@@ -668,6 +714,11 @@ nav .nav-items .item:hover::after {
   align-items: center;
   justify-content: center;
   background: #FF008A;
+  transition: .3s all;
+}
+
+.fortnite-packages__blocks__block .price .buy .text:hover {
+  background: #B20060;
 }
 
 .fortnite-packages__blocks__block .price .buy .text p {
@@ -872,6 +923,11 @@ nav .nav-items .item:hover::after {
   align-items: center;
   justify-content: center;
   background: #FF005C;
+  transition: .3s all;
+}
+
+.vbucks__blocks__block .right__btn .btn .text:hover {
+  background: #BF0045;
 }
 
 .vbucks__blocks__block .right__btn .btn .text p {
@@ -950,9 +1006,21 @@ nav .nav-items .item:hover::after {
   position: absolute;
   margin-left: 70%;
   cursor: pointer;
+  transition: .3s all;
+}
+
+.discount .form .btn:hover {
+  transition: .3s all;
+  transform: scale(1.1);
+}
+
+.discount .form .btn:hover button {
+  transition: .3s all;
+  transform: scale(1.1);
 }
 
 .discount .form .btn button {
+  transition: .3s all;
   width: 100%;
   height: 100%;
   display: flex;
@@ -1028,6 +1096,7 @@ nav .nav-items .item:hover::after {
 
 .modal-wrapper {
   position: fixed;
+  z-index: 2;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1407,7 +1476,7 @@ nav .nav-items .item:hover::after {
   outline: none;
   padding: 7px 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
