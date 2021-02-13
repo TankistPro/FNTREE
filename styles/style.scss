@@ -241,7 +241,7 @@ nav {
 
                     &::after {
                         transition: .3s all;
-                        content: url("../../img/nav/btn-effect-h.png");
+                        filter: brightness(0.7);
                     }
                 }
                 

@@ -235,7 +235,7 @@ nav .nav-block__right-btn:hover {
 
 nav .nav-block__right-btn:hover::after {
   transition: .3s all;
-  content: url("../../img/nav/btn-effect-h.png");
+  filter: brightness(0.7);
 }
 
 nav .nav-block__right-btn::before, nav .nav-block__right-btn::after {
