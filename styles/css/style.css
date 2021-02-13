@@ -80,7 +80,7 @@ body {
 .menu-burger-block__list-item::before {
   content: url("../../img/nav/dote.svg");
   position: absolute;
-  top: -12%;
+  top: 0%;
   left: 0;
   width: 15px;
   height: 15px;
