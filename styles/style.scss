@@ -31,7 +31,7 @@ body {
     left: -100%;
     // bottom: 0;
     background-color: #F9F9F9;
-    transition: .3s all;
+    transition: .5s all;
     padding-bottom: 10px;
 
     max-width: 288px;
@@ -63,20 +63,24 @@ body {
         margin-top: 34px;
 
         &-item {
-            text-transform: uppercase;
-            font-size: 1.0625rem;
-            font-weight: 500;
-            line-height: 25px;
             cursor: pointer;
             position: relative;
             padding-left: 20px;
-            color: #000000;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            
+            a {
+                color: #000000;
+                text-decoration: none;
+                font-size: 1.0625rem;
+                font-weight: 500;
+                line-height: 25px;
+                text-transform: uppercase;
+            }
 
             &::before {
                 content: url("../../img/nav/dote.svg");
                 position: absolute;
-                top: -12%;
+                top: 0%;
                 left: 0;
                 width: 15px;
                 height: 15px;
@@ -89,7 +93,9 @@ body {
 
             &:hover {
                 transition: .2s all;
-                color: #E72487;
+                a {
+                    color: #E72487;
+                }
                 
                 &::before {
                     content: url("../../img/nav/list-img.svg");
@@ -135,6 +141,66 @@ nav {
 
             &-options {
                 display: flex;
+
+                .dropdowm-block {
+                    position: relative;
+                    &.open {
+                        
+                        .dropdowm-block__lang-block, .dropdowm-block__curr-block {
+                            transition: .4s all;
+                            height: 60px;
+                        }
+
+                        p {
+                            img {
+                                transform: rotate(180deg);
+                                transition: .4s all;
+                            }
+                        }
+                    }
+
+                    &__lang-block, &__curr-block {
+                        transition: .4s all;
+                        overflow: hidden;
+                        height: 0;
+                        position: absolute;
+                        top: 195%;
+                        background-color:  #FFFFFF;
+                        box-shadow: 0px 13px 14px rgba(0, 0, 0, 0.04);
+
+                        .dropdowm-block__item {
+
+                            a {
+                                display: block;
+                                text-decoration: none;
+                                color: #AEAEAE;
+                                line-height: 20px;
+                                font-size: 1.0625rem;
+                                padding: 5px 33px 5px 22px;
+                                font-weight: 500;
+
+                                &:hover {
+                                    transition: .3s all;
+                                    color: #FFFFFF;
+                                    background-color: #FF008A;
+                                }
+                            }
+                        }
+                    }
+
+                    &__lang-block {
+                        left: -40%;
+                    }
+
+                    &__curr-block {
+                        left: -28%;
+                    }
+
+                    &:first-child {
+                        margin-right: 22px;
+                    }
+                }
+
                 p {
                     display: inline;
                     color: #000000;
@@ -146,12 +212,10 @@ nav {
                         margin-left: 15px;
                     }
 
-                    &::after {
-                        content: url("../../img/nav/arrow-down.svg");
-                        width: 5px;
-                        height: 7px;
+                    img {
+                        transform: rotate(0deg);
+                        transition: .4s all;
                         vertical-align: middle;
-                        margin-left: 5px;
                     }
                 }
             }
@@ -170,13 +234,15 @@ nav {
                 overflow: hidden;
                 padding-left: 0;
                 margin-left: 85px;
+                transition: .3s all;
 
                 &:hover {
                     background: #B20060;
                     transition: .3s all;
 
                     &::after {
-                        content: url("../../img/nav/btn-effect-h.png");
+                        transition: .3s all;
+                        filter: brightness(0.7);
                     }
                 }
                 
@@ -196,6 +262,7 @@ nav {
                 }
 
                 &::after {
+                    transition: .3s all;
                     display: inline-block;
                     content: url("../../img/nav/btn-effect.png");
                     width: 46px;

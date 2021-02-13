@@ -14,10 +14,10 @@
         <div class="menu-burger-block__content">
            <h1 class="menu-burger-block__title">Navigation</h1>
            <ul class="menu-burger-block__list">
-               <li class="menu-burger-block__list-item">Home</li>
-               <li class="menu-burger-block__list-item">Special offer</li>
-               <li class="menu-burger-block__list-item">Vbucks</li>
-               <li class="menu-burger-block__list-item">Fortnite packages</li>
+               <li class="menu-burger-block__list-item"><a href="#">Home</a></li>
+               <li class="menu-burger-block__list-item"><a href="#">Special offer</a></li>
+               <li class="menu-burger-block__list-item"><a href="#">Vbucks</a></li>
+               <li class="menu-burger-block__list-item"><a href="#">Fortnite packages</a></li>
            </ul>
            <a href="#" class="menu-burger-block__logo">
                 <img src="./img/nav/logo.png" alt="logo">
@@ -33,14 +33,37 @@
             </div>
             <a href="#" class="nav-block__logo"><img src="./img/nav/logo.png" alt="logo"></a>
             <div class="nav-items">
-                <a href="#" class="nav-items item">PACKAGES</a>
+                <a href="#" class="nav-items item">HOME</a>
+                <a href="#" class="nav-items item">SPECIAL OFFERS</a>
                 <a href="#" class="nav-items item">VBUCKS</a>
-                <a href="#" class="nav-items item">VK PAGE</a>
+                <a href="#" class="nav-items item">FORTNITE PACKAGES</a>
             </div>
             <div class="nav-block__right">
                 <div class="nav-block__right-options">
-                    <p>EN</p>
-                    <p>USD</p>
+                    <div class="dropdowm-block">
+                        <p>
+                            EN 
+                            <img src="./img/nav/arrow-down.svg" alt="">
+                        </p>
+                        <div class="dropdowm-block__lang-block dwb">
+                            <ul>
+                                <li class="dropdowm-block__item"><a href="#">Русский</a></li>
+                                <li class="dropdowm-block__item"><a href="#">English</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="dropdowm-block">
+                        <p>
+                            USD 
+                            <img src="./img/nav/arrow-down.svg" alt="">
+                        </p>
+                        <div class="dropdowm-block__curr-block dwb">
+                            <ul>
+                                <li class="dropdowm-block__item"><a href="#">USD</a></li>
+                                <li class="dropdowm-block__item"><a href="#">RUB</a></li>
+                            </ul>
+                        </div> 
+                    </div>
                 </div>
                 <button class="nav-block__right-btn">SIGN IN</button>
             </div>
@@ -488,5 +511,6 @@
     <script src="./scripts/update-password.js"></script>
     <script src="./scripts/submit.js"></script>
     <script src="./scripts/fp-slider.js"></script>
+    <script src="./scripts/openDropDown.js"></script>
 </body>
 </html>
