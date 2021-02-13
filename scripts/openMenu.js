@@ -19,9 +19,10 @@ const openMenu = () => {
 const closeMenu = () => {
     console.log("click")
     menu.style.left= "-100%";
-    wrapper.style.transform = "translateX(0px)";
+    wrapper.style.transform = "initial";
     menu.classList.remove("open");
     overlay.style.display = "none";
+    body.style.overflow = "auto";
 }
 
 overlay.addEventListener("click", closeMenu)
