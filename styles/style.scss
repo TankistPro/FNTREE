@@ -636,112 +636,133 @@ nav {
         color: #fff;
     }
 
-    &__blocks {
+    &__slider {
         margin-left: 7.5%;
         display: flex;
+        align-items: center;
+        width: 68%;
+        position: relative;
+        overflow: hidden;
 
-        & .block-1 {
-            background-image: url("../../img/fortnite-package/1.png");
+        & .fp-btn_slider {
+            z-index: 1;
+            cursor: pointer;
+            position: absolute;
+            right: 0;
         }
 
-        & .block-2 {
-            background-image: url("../../img/fortnite-package/2.png");
-        }
-
-        & .block-3 {
-            background-image: url("../../img/fortnite-package/3.png");
-        }
-        
-        &__block {
-            height: 500px;
-            width: 350px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin-right: 70px;
+        &__blocks {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-end;
+            width: 100%;
 
-            & .sale {
-                width: 160px;
-                height: 37px;
-                background-image: url("../../img/fortnite-package/bg-sale.png");
-                background-size: contain;
-                background-repeat: no-repeat;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                font-style: italic;
-                font-weight: 900;
-                font-size: 23px;
-                line-height: 29px;
-                color: #FFFFFF;
-                padding-bottom: 2px;
+            & .item {
+                width: 33.333333333333333%;
+                flex: 0 0 33.33333333333333%;
             }
-
-            & .price {
+    
+            & .block-1 {
+                background-image: url("../../img/fortnite-package/1.png");
+            }
+    
+            & .block-2 {
+                background-image: url("../../img/fortnite-package/2.png");
+            }
+    
+            & .block-3 {
+                background-image: url("../../img/fortnite-package/3.png");
+            }
+            
+            &__block {
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-right: 70px;
                 display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 align-items: flex-end;
-                width: 100%;
-
-                & .count {
-                    width: 50%;
-                    height: 50px;
-                    background-image: url("../../img/fortnite-package/bg-price.png");
-                    background-size: cover;
+                background-size: cover;
+    
+                & .sale {
+                    width: 160px;
+                    height: 37px;
+                    background-image: url("../../img/fortnite-package/bg-sale.png");
+                    background-size: contain;
                     background-repeat: no-repeat;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
-                    font-style: normal;
-                    font-weight: 700;
+    
+                    font-style: italic;
+                    font-weight: 900;
                     font-size: 23px;
-                    line-height: 28px;
+                    line-height: 29px;
                     color: #FFFFFF;
-
-                    & span {
-                        font-size: 16px;
-                        font-weight: 700;
-                        margin-top: 3%;
-                    }
+                    padding-bottom: 2px;
                 }
-
-                & .buy {
+    
+                & .price {
                     display: flex;
-                    height: 50px;
-                    width: 50%;
-                    cursor: pointer;
-
-                    & .img {
-                        width: 20%;
+                    align-items: flex-end;
+                    width: 100%;
+    
+                    & .count {
+                        width: 50%;
+                        height: 50px;
+                        background-image: url("../../img/fortnite-package/bg-price.png");
+                        background-size: cover;
+                        background-repeat: no-repeat;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        background: #B20060;
+    
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 23px;
+                        line-height: 28px;
+                        color: #FFFFFF;
+    
+                        & span {
+                            font-size: 16px;
+                            font-weight: 700;
+                            margin-top: 3%;
+                        }
                     }
-
-                    & .text {
+    
+                    & .buy {
                         display: flex;
-                        width: 80%;
-                        align-items: center;
-                        justify-content: center;
-                        background: #FF008A;
-                        transition: .3s all;
-
-                        &:hover {
+                        height: 50px;
+                        width: 50%;
+                        cursor: pointer;
+    
+                        & .img {
+                            width: 20%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             background: #B20060;
                         }
-
-                        & p {
-                            font-style: normal;
-                            font-weight: 600;
-                            font-size: 18px;
-                            line-height: 21px;
-                            color: #FFFFFF;
-                            margin-right: 14px;
+    
+                        & .text {
+                            display: flex;
+                            width: 80%;
+                            align-items: center;
+                            justify-content: center;
+                            background: #FF008A;
+                            transition: .3s all;
+    
+                            &:hover {
+                                background: #B20060;
+                            }
+    
+                            & p {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 21px;
+                                color: #FFFFFF;
+                                margin-right: 14px;
+                            }
                         }
                     }
                 }

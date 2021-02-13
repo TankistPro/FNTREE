@@ -61,10 +61,7 @@
     margin-bottom: 90px;
     margin-left: 7%;
   }
-  .fortnite-packages__blocks {
-    margin-left: 7%;
-  }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks__block {
     width: 340px;
     margin-right: 50px;
     height: 470px;
@@ -80,11 +77,11 @@
   }
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1701px) {
   .fortnite-packages {
     padding: 285px 0 200px 0;
   }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks__block {
     width: 320px;
     margin-right: 40px;
     height: 450px;
@@ -104,6 +101,9 @@
   .fortnite-packages {
     padding: 245px 0 180px 0;
   }
+  .fortnite-packages__slider {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 1579px) {
@@ -116,9 +116,8 @@
   .fortnite-packages {
     background-image: url("../../img/fortnite-package/bg-1500.png");
   }
-  .fortnite-packages__blocks {
-    justify-content: space-between;
-    flex-wrap: wrap;
+  .fortnite-packages__slider {
+    width: 86%;
   }
   .discount {
     padding: 408px 400px 178px 650px;
@@ -151,6 +150,9 @@
 }
 
 @media screen and (max-width: 1255px) {
+  .fortnite-packages__slider {
+    width: 89%;
+  }
   .discount {
     padding: 408px 200px 178px 500px;
   }
@@ -185,14 +187,43 @@
 
 @media screen and (max-width: 1162px) {
   .fortnite-packages {
-    padding: 385px 0 180px 0;
+    background-image: url("../../img/fortnite-package/bg-900.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 600px 0 100px 0;
   }
-  .fortnite-packages__blocks {
-    justify-content: space-around;
+  .fortnite-packages h2 {
+    margin: 0 0 90px 0;
+    font-size: 60px;
   }
-  .fortnite-packages__blocks__block {
-    margin-right: 40px;
-    margin-bottom: 20px;
+  .fortnite-packages__slider {
+    width: auto;
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .fortnite-packages__slider .fp-btn_slider {
+    bottom: -10px;
+    right: auto;
+    transform: rotate(90deg);
+  }
+  .fortnite-packages__slider .item {
+    width: 100%;
+    flex: 0 0 33.3333333%;
+  }
+  .fortnite-packages__slider__blocks {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin: 0;
+    height: 2280px;
+  }
+  .fortnite-packages__slider__blocks__block {
+    margin-bottom: 60px;
+    width: 500px;
+    height: 700px;
+    margin: 0 0 60px 0;
   }
   .discount {
     background-image: url("../../img/footer/bg-discount-1162.png");
@@ -259,24 +290,9 @@
 
 @media screen and (max-width: 900px) {
   .fortnite-packages {
-    background-image: url("../../img/fortnite-package/bg-900.png");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 600px 0 450px 0;
+    padding: 400px 0 100px 0;
   }
-  .fortnite-packages h2 {
-    margin: 0 0 90px 0;
-    font-size: 60px;
-  }
-  .fortnite-packages__blocks {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks__block {
     margin-bottom: 60px;
     width: 500px;
     height: 700px;
@@ -353,7 +369,7 @@
 
 @media screen and (max-width: 830px) {
   .fortnite-packages {
-    padding: 400px 0 380px 0;
+    padding: 400px 0 100px 0;
   }
 }
 
@@ -376,7 +392,10 @@
   .fortnite-packages h2 {
     font-size: 40px;
   }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks {
+    height: 2080px;
+  }
+  .fortnite-packages__slider__blocks__block {
     width: 450px;
     height: 620px;
   }
@@ -426,7 +445,7 @@
     top: -120%;
   }
   .fortnite-packages {
-    padding: 210px 0 70px 0;
+    padding: 210px 0 100px 0;
   }
   .fortnite-packages h2 {
     margin-bottom: 50px;
@@ -485,7 +504,10 @@
   .fortnite-packages h2 {
     font-size: 32px;
   }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks {
+    height: 1900px;
+  }
+  .fortnite-packages__slider__blocks__block {
     width: 370px;
     height: 550px;
   }
@@ -611,6 +633,9 @@
   .fortnite-packages h2 {
     font-size: 28px;
   }
+  .fortnite-packages__blocks {
+    height: 1700px;
+  }
   .fortnite-packages__blocks__block {
     width: 320px;
     height: 480px;
@@ -623,7 +648,7 @@
   .fortnite-packages h2 {
     font-size: 28px;
   }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks__block {
     width: 320px;
     height: 480px;
   }
@@ -747,27 +772,30 @@
     font-size: 22px;
     line-height: 27px;
   }
-  .fortnite-packages__blocks__block {
+  .fortnite-packages__slider__blocks {
+    height: 1400px;
+  }
+  .fortnite-packages__slider__blocks__block {
     height: 379px;
     width: 270px;
   }
-  .fortnite-packages__blocks__block .sale {
+  .fortnite-packages__slider__blocks__block .sale {
     font-size: 20px;
     line-height: 25px;
   }
-  .fortnite-packages__blocks__block .price .count {
+  .fortnite-packages__slider__blocks__block .price .count {
     font-size: 17px;
     line-height: 21px;
   }
-  .fortnite-packages__blocks__block .price .count span {
+  .fortnite-packages__slider__blocks__block .price .count span {
     font-size: 17px;
     margin-top: 0;
   }
-  .fortnite-packages__blocks__block .price .buy .img img {
+  .fortnite-packages__slider__blocks__block .price .buy .img img {
     height: 15px;
     width: 15px;
   }
-  .fortnite-packages__blocks__block .price .buy .text p {
+  .fortnite-packages__slider__blocks__block .price .buy .text p {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
