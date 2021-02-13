@@ -177,6 +177,7 @@ nav .nav-block__right-btn:hover {
 }
 
 nav .nav-block__right-btn:hover::after {
+  transition: .3s all;
   content: url("../../img/nav/btn-effect-h.png");
 }
 
