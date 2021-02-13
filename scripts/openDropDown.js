@@ -1,11 +1,13 @@
-const items = document.querySelectorAll(".dropdowm-block");
+const items = document.querySelectorAll(".dropdowm-block p");
 
 items.forEach( item => {
     item.addEventListener('click', () => {
-        if (!item.classList.contains('open')) {
-            item.classList.add("open")
+        const dropDowm = item.closest('.dropdowm-block');
+        // console.log(dropDowm)
+        if (!dropDowm.classList.contains('open')) {
+            dropDowm.classList.add("open")
         } else {
-            item.classList.remove("open")
+            dropDowm.classList.remove("open")
         }
     })
 })
