@@ -226,6 +226,7 @@ nav .nav-block__right-btn {
   overflow: hidden;
   padding-left: 0;
   margin-left: 85px;
+  transition: .3s all;
 }
 
 nav .nav-block__right-btn:hover {
@@ -254,6 +255,7 @@ nav .nav-block__right-btn::before {
 }
 
 nav .nav-block__right-btn::after {
+  transition: .3s all;
   display: inline-block;
   content: url("../../img/nav/btn-effect.png");
   width: 46px;

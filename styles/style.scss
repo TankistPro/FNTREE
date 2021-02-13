@@ -234,6 +234,7 @@ nav {
                 overflow: hidden;
                 padding-left: 0;
                 margin-left: 85px;
+                transition: .3s all;
 
                 &:hover {
                     background: #B20060;
@@ -261,6 +262,7 @@ nav {
                 }
 
                 &::after {
+                    transition: .3s all;
                     display: inline-block;
                     content: url("../../img/nav/btn-effect.png");
                     width: 46px;
