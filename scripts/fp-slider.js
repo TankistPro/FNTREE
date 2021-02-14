@@ -30,7 +30,7 @@ function gorizontalSlider() {
         }
         wrap.style.transition = 'none';
         wrap.style.transform = `translateX(0%)`;
-    }, 500);
+    }, 600);
 }
 
 function verticalSlider() {
