@@ -66,8 +66,7 @@
             margin-left: 7%;
         }
 
-        &__blocks {
-            margin-left: 7%;
+        &__slider__blocks {
             &__block {
                 width: 340px;
                 margin-right: 50px;
@@ -89,11 +88,11 @@
     }
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1701px) {
     .fortnite-packages {
         padding: 285px 0 200px 0;
 
-        &__blocks__block {
+        &__slider__blocks__block {
             width: 320px;
             margin-right: 40px;
             height: 450px;
@@ -116,6 +115,10 @@
 @media screen and (max-width: 1600px) {
     .fortnite-packages {
         padding: 245px 0 180px 0;
+
+        &__slider {
+            width: 70%;
+        }
     }
 }
 
@@ -143,11 +146,10 @@
 @media screen and (max-width: 1500px) {
     .fortnite-packages {
         background-image: url("../../img/fortnite-package/bg-1500.png");
+    }
 
-        &__blocks {
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+    .fortnite-packages__slider {
+        width: 86%;
     }
 
     .discount {
@@ -193,6 +195,10 @@
 }
 
 @media screen and (max-width: 1255px) {
+    .fortnite-packages__slider {
+        width: 89%;
+    }
+
     .discount {
         padding: 408px 200px 178px 500px;
     }
@@ -231,15 +237,48 @@
 
 @media screen and (max-width: 1162px) {
     .fortnite-packages {
-        padding: 385px 0 180px 0;
-        
-        &__blocks {
-            justify-content: space-around; 
+        background-image: url("../../img/fortnite-package/bg-900.png");
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 600px 0 100px 0;
 
-           &__block {
-               margin-right: 40px;
-               margin-bottom: 20px;
-           }
+        & h2 {
+            margin: 0 0 90px 0;
+            font-size: 60px;
+        }
+
+        &__slider {
+            width: auto;
+            margin-left: 0;
+            flex-direction: column;
+
+            & .fp-btn_slider {
+                bottom: -10px;
+                right: auto;
+                transform: rotate(90deg);
+            }
+
+            & .item {
+                width: 100%;
+                flex: 0 0 33.3333333%;
+            }
+
+            &__blocks {
+                flex-direction: column;
+                justify-content: none;
+                align-items: center;
+                margin: 0;
+                height: 2280px;
+    
+                &__block {
+                    margin-bottom: 60px;
+                    width: 500px;
+                    height: 700px;
+                    margin: 0 0 60px 0;
+                }
+            }
         }
     }
 
@@ -327,24 +366,10 @@
     }
     
     .fortnite-packages {
-        background-image: url("../../img/fortnite-package/bg-900.png");
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 600px 0 450px 0;
+        padding: 400px 0 100px 0;
 
-        & h2 {
-            margin: 0 0 90px 0;
-            font-size: 60px;
-        }
 
-        &__blocks {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-
+        &__slider__blocks {
             &__block {
                 margin-bottom: 60px;
                 width: 500px;
@@ -438,12 +463,8 @@
 
 @media screen and (max-width: 830px) {
     .fortnite-packages {
-        padding: 400px 0 380px 0;
+        padding: 400px 0 100px 0;
     }
-}
-
-@media screen and (max-width: 768px) {
-
 }
 
 @media screen and (max-width: 760px) {
@@ -465,11 +486,15 @@
         & h2 {
             font-size: 40px;
         }
+        &__slider__blocks {
+            height: 2080px;
 
-        &__blocks__block {
-            width: 450px;
-            height: 620px;
+            &__block {
+                width: 450px;
+                height: 620px;
+            }
         }
+        
     }
 
     .discount {
@@ -513,14 +538,13 @@
 }
 
 @media screen and (max-width: 600px) {
-
     .special-block__title-shadow {
         font-size: 6.5rem;
         top: -120%;
     }
 
     .fortnite-packages {
-        padding: 210px 0 70px 0;
+        padding: 210px 0 100px 0;
 
         & h2 {
             margin-bottom: 50px;
@@ -598,9 +622,13 @@
             font-size: 32px;
         }
 
-        &__blocks__block {
-            width: 370px;
-            height: 550px;
+        &__slider__blocks {
+            height: 1900px;
+
+            &__block {
+                width: 370px;
+                height: 550px;
+            }
         }
     }
 
@@ -768,9 +796,13 @@
             font-size: 28px;
         }
 
-        &__blocks__block {
-            width: 320px;
-            height: 480px;
+        &__blocks {
+            height: 1700px;
+
+            &__block {
+                width: 320px;
+                height: 480px;
+            }
         }
     }
 
@@ -784,7 +816,7 @@
             font-size: 28px;
         }
 
-        &__blocks__block {
+        &__slider__blocks__block {
             width: 320px;
             height: 480px;
         }
@@ -943,40 +975,45 @@
             line-height: 27px;
         }
 
-        &__blocks__block {
-            height: 379px;
-            width: 270px;
-
-            & .sale {
-                font-size: 20px;
-                line-height: 25px;
-            }
-
-            .price {
-                & .count {
-                    font-size: 17px;
-                    line-height: 21px;
-
-                    & span {
-                        font-size: 17px;
-                        margin-top: 0;
-                    }
+        &__slider__blocks {
+            height: 1400px;
+            
+            &__block {
+                height: 379px;
+                width: 270px;
+    
+                & .sale {
+                    font-size: 20px;
+                    line-height: 25px;
                 }
-
-                & .buy {
-                    & .img img {
-                        height: 15px;
-                        width: 15px;
+    
+                .price {
+                    & .count {
+                        font-size: 17px;
+                        line-height: 21px;
+    
+                        & span {
+                            font-size: 17px;
+                            margin-top: 0;
+                        }
                     }
-
-                    & .text p {
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 17px;
+    
+                    & .buy {
+                        & .img img {
+                            height: 15px;
+                            width: 15px;
+                        }
+    
+                        & .text p {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
                     }
                 }
             }
         }
+        
     }
 }
 

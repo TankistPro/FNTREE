@@ -690,26 +690,46 @@ nav .nav-items .item:hover::after {
   color: #fff;
 }
 
-.fortnite-packages__blocks {
+.fortnite-packages__slider {
   margin-left: 7.5%;
   display: flex;
+  align-items: center;
+  width: 68%;
+  position: relative;
+  overflow: hidden;
 }
 
-.fortnite-packages__blocks .block-1 {
+.fortnite-packages__slider .fp-btn_slider {
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.fortnite-packages__slider__blocks {
+  display: flex;
+  width: 100%;
+}
+
+.fortnite-packages__slider__blocks .item {
+  width: 33.333333333333333%;
+  flex: 0 0 33.33333333333333%;
+}
+
+.fortnite-packages__slider__blocks .block-1 {
   background-image: url("../../img/fortnite-package/1.png");
 }
 
-.fortnite-packages__blocks .block-2 {
+.fortnite-packages__slider__blocks .block-2 {
   background-image: url("../../img/fortnite-package/2.png");
 }
 
-.fortnite-packages__blocks .block-3 {
+.fortnite-packages__slider__blocks .block-3 {
   background-image: url("../../img/fortnite-package/3.png");
 }
 
-.fortnite-packages__blocks__block {
+.fortnite-packages__slider__blocks__block {
   height: 500px;
-  width: 350px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 70px;
@@ -717,9 +737,10 @@ nav .nav-items .item:hover::after {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  background-size: cover;
 }
 
-.fortnite-packages__blocks__block .sale {
+.fortnite-packages__slider__blocks__block .sale {
   width: 160px;
   height: 37px;
   background-image: url("../../img/fortnite-package/bg-sale.png");
@@ -736,13 +757,13 @@ nav .nav-items .item:hover::after {
   padding-bottom: 2px;
 }
 
-.fortnite-packages__blocks__block .price {
+.fortnite-packages__slider__blocks__block .price {
   display: flex;
   align-items: flex-end;
   width: 100%;
 }
 
-.fortnite-packages__blocks__block .price .count {
+.fortnite-packages__slider__blocks__block .price .count {
   width: 50%;
   height: 50px;
   background-image: url("../../img/fortnite-package/bg-price.png");
@@ -758,20 +779,20 @@ nav .nav-items .item:hover::after {
   color: #FFFFFF;
 }
 
-.fortnite-packages__blocks__block .price .count span {
+.fortnite-packages__slider__blocks__block .price .count span {
   font-size: 16px;
   font-weight: 700;
   margin-top: 3%;
 }
 
-.fortnite-packages__blocks__block .price .buy {
+.fortnite-packages__slider__blocks__block .price .buy {
   display: flex;
   height: 50px;
   width: 50%;
   cursor: pointer;
 }
 
-.fortnite-packages__blocks__block .price .buy .img {
+.fortnite-packages__slider__blocks__block .price .buy .img {
   width: 20%;
   display: flex;
   align-items: center;
@@ -779,7 +800,7 @@ nav .nav-items .item:hover::after {
   background: #B20060;
 }
 
-.fortnite-packages__blocks__block .price .buy .text {
+.fortnite-packages__slider__blocks__block .price .buy .text {
   display: flex;
   width: 80%;
   align-items: center;
@@ -788,11 +809,11 @@ nav .nav-items .item:hover::after {
   transition: .3s all;
 }
 
-.fortnite-packages__blocks__block .price .buy .text:hover {
+.fortnite-packages__slider__blocks__block .price .buy .text:hover {
   background: #B20060;
 }
 
-.fortnite-packages__blocks__block .price .buy .text p {
+.fortnite-packages__slider__blocks__block .price .buy .text p {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
