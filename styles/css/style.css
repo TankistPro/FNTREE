@@ -706,6 +706,10 @@ nav .nav-items .item:hover::after {
   right: 0;
 }
 
+.fortnite-packages__slider .fp-btn_slider:hover path {
+  fill-opacity: 0.7;
+}
+
 .fortnite-packages__slider__blocks {
   display: flex;
   width: 100%;
