@@ -296,10 +296,17 @@ nav .nav-items .item:hover::after {
 }
 
 .main-banner {
+  overflow: hidden;
   position: relative;
   width: fit-content;
   margin: 0 auto 120px auto;
   width: 100%;
+}
+
+.main-banner .slider-wrapper {
+  width: 5760px;
+  display: flex;
+  transition: .5s all;
 }
 
 .main-banner .slider-arrow-right {
@@ -370,6 +377,10 @@ nav .nav-items .item:hover::after {
 
 .main-banner .slider-counter__line-top.active, .main-banner .slider-counter__line-bottom.active {
   background-color: #FF008A;
+}
+
+.main-banner .slider-item {
+  position: relative;
 }
 
 .main-banner .slider-item.first {
