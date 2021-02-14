@@ -16,17 +16,10 @@ if (window.innerWidth > 1162) {
 
 
 function gorizontalSlider() {
-    let firstItem;
-    for (let i=0; i<itemsWrap.length; i++) {
-        if (itemsWrap[i].style.order == '0') {
-            firstItem = itemsWrap[i];
-        }
-    }
-    firstItem.style.transition = '.20s ease';
-    firstItem.style.opacity = '0';
+    wrap.style.transition = 'transform 0.6s ease';
+    wrap.style.transform = `translateX(${-33.3333}%)`;
 
     setTimeout(() => {
-        firstItem.style.transition = 'none';
         for (let i=0; i<itemsWrap.length; i++) {
             let k = itemsWrap[i].style.order;
             if (k==0) {
@@ -36,40 +29,36 @@ function gorizontalSlider() {
             itemsWrap[i].style.order = `${k}`;
         }
         wrap.style.transition = 'none';
-        wrap.style.transform = `translateX(${33.3333}%)`;
-        firstItem.style.opacity = '1';
-    }, 100);
-    // wrap.style.transition = 'none';
-    // wrap.style.transform = `translateX(${33.3333}%)`;
-
-    setTimeout(() => {
-        wrap.style.transition = 'transform 0.6s ease';
         wrap.style.transform = `translateX(0%)`;
-    }, 200);
+    }, 500);
 }
 
 function verticalSlider() {
-    for (let i=0; i<itemsWrap.length; i++) {
-        let k = itemsWrap[i].style.order;
-        if (k==0) {
-            k = Number(itemsWrap.length);
-        }
-        k = Number(k)-1;
-        itemsWrap[i].style.order = `${k}`;
-    }
-    wrap.style.transition = 'none';
-    wrap.style.transform = `translateY(${33.3333}%)`;
-    
+    wrap.style.transition = 'transform 0.6s ease';
+    wrap.style.transform = `translateY(${-33.3333}%)`;
+
     setTimeout(() => {
-        wrap.style.transition = 'transform 0.6s ease';
+        for (let i=0; i<itemsWrap.length; i++) {
+            let k = itemsWrap[i].style.order;
+            if (k==0) {
+                k = Number(itemsWrap.length);
+            }
+            k = Number(k)-1;
+            itemsWrap[i].style.order = `${k}`;
+        }
+        wrap.style.transition = 'none';
         wrap.style.transform = `translateY(0%)`;
-    }, 50);
+    }, 500);
 }
 
 window.addEventListener(`resize`, () => {
     if (window.innerWidth > 1162) {
+        console.log('h')
         right.addEventListener('click', gorizontalSlider);
+        right.removeEventListener('click', verticalSlider);
     } else {
+        console.log('hyy')
+        right.removeEventListener('click', gorizontalSlider);
         right.addEventListener('click', verticalSlider);
     }
 });
