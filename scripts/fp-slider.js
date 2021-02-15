@@ -3,7 +3,7 @@ const right = slider.getElementsByClassName('fp-btn_slider')[0];
 const wrap = slider.getElementsByClassName('fortnite-packages__slider__blocks')[0];
 let itemsWrap = wrap.children;
 
-wrap.style.transform = 'translateX(0)';
+
 for (let i = 0; i<itemsWrap.length; i++) {
     itemsWrap[i].style.order = `${i}`;
 }
