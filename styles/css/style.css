@@ -1210,6 +1210,11 @@ nav .nav-items .item:hover::after {
 
 .modal-wrapper.signin .modal-block .form-btn {
   margin-top: 55px;
+  transition: .6s all;
+}
+
+.modal-wrapper.signin .modal-block .form-btn:hover {
+  background: #B20060;
 }
 
 .modal-wrapper.signin .modal-block .form-field:not(:first-child) {
@@ -1376,6 +1381,11 @@ nav .nav-items .item:hover::after {
   padding: 13px 0;
   margin-top: 86px;
   outline: none;
+  transition: .6s all;
+}
+
+.modal-wrapper .modal-block .form-btn:hover {
+  background: #B20060;
 }
 
 .modal-wrapper .modal-block .form-text {
@@ -1486,6 +1496,11 @@ nav .nav-items .item:hover::after {
   line-height: 24px;
   color: #FFFFFF;
   cursor: pointer;
+  transition: .6s all;
+}
+
+.update-password__menu button:hover {
+  background: #B20060;
 }
 
 .update-password-key {
@@ -1626,4 +1641,9 @@ nav .nav-items .item:hover::after {
   line-height: 24px;
   color: #FFFFFF;
   cursor: pointer;
+  transition: .6s all;
+}
+
+.update-password-key__menu button:hover {
+  background: #B20060;
 }
