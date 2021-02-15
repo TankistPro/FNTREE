@@ -1234,10 +1234,101 @@ nav {
     justify-content: center;
     background-color:  rgba(15, 0, 37, 0.46);
 
-    &.signin {
+    .form {
+        margin-top: 110px;
 
+        &-field {
+            position: relative;
+
+            &:not(:first-child) {
+                // margin-top: 50px;
+                margin-top: 64px;
+            }
+
+            .form-label {
+                pointer-events: none;
+                position: absolute;
+                top: 0;
+                font-size: 1.25rem;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.66);
+                display: block;
+                transition: .4s all;
+            }
+
+            .form-input {
+                // margin-top: 14px;
+                padding-bottom: 7px;
+                line-height: 24px;
+                color: #ffffff;
+                font-size: 1.25rem;
+                width: 100%;
+                outline: none;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+            }
+
+            .form-input:not(:focus):valid~.form-label,
+            .form-input:focus~.form-label{
+                transition: .4s all;
+                font-size: 1rem;
+                top: -100%;
+            }
+
+            .password {
+                display: block;
+                position: absolute;
+                top: 20%;
+                right: 2%;
+            }
+        }
+
+        &-q {
+            font-size: 0.875rem;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.58);
+            display: block;
+            text-align: end;
+            text-decoration: none;
+            margin-top: 15px     ;
+        }
+
+        &-btn {
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            background-color: #FF008A;
+            width: 100%;
+            padding: 13px 0;
+            margin-top: 116px;
+            outline: none;
+            transition: .6s all;
+
+            &:hover {
+                background: #B20060;
+            }
+        }
+
+        &-text {
+            color: #ffffff;
+            font-size: 0.9375rem;
+            line-height: 17px;
+            text-align: center;
+            margin-top: 15px;
+        } 
+
+        &-link {
+            color: #FF008A;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 3px;
+        }
+    }
+
+    &.signin {
         .modal-block .form {
-            margin-top: 70px;
+            margin-top: 94px;
         }
 
         .modal-block .form-btn {
@@ -1250,7 +1341,7 @@ nav {
         }
 
         .modal-block .form-field:not(:first-child) {
-            margin-top: 40px;
+            margin-top: 64px;
         }
     }
 
@@ -1355,86 +1446,6 @@ nav {
                 margin: 0 10px;
              }
         }
-
-        .form {
-            margin-top: 87px;
-
-            &-field {
-                position: relative;
-                &:not(:first-child) {
-                    margin-top: 50px;
-                }
-                .form-label {
-                    font-weight: 500;
-                    font-size: 1rem;
-                    color: rgba(255, 255, 255, 0.66);
-                    display: block;
-                }
-
-                .form-input {
-                    margin-top: 14px;
-                    padding-bottom: 7px;
-                    line-height: 24px;
-                    color: #ffffff;
-                    font-size: 1.25rem;
-                    width: 100%;
-                    outline: none;
-                    background: transparent;
-                    border: none;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
-                }
-
-                .password {
-                    display: block;
-                    position: absolute;
-                    top: 50%;
-                    right: 2%;
-                }
-            }
-
-            &-q {
-                font-size: 0.875rem;
-                line-height: 16px;
-                color: rgba(255, 255, 255, 0.58);
-                display: block;
-                text-align: end;
-                text-decoration: none;
-                margin-top: 15px     ;
-            }
-
-            &-btn {
-                color: #ffffff;
-                border: none;
-                border-radius: 8px;
-                background-color: #FF008A;
-                width: 100%;
-                padding: 13px 0;
-                margin-top: 86px;
-                outline: none;
-                transition: .6s all;
-
-                &:hover {
-                    background: #B20060;
-                }
-            }
-
-            &-text {
-                color: #ffffff;
-                font-size: 0.9375rem;
-                line-height: 17px;
-                text-align: center;
-                margin-top: 15px;
-            } 
-
-            &-link {
-                color: #FF008A;
-                font-weight: 600;
-                text-decoration: none;
-                margin-left: 3px;
-            }
-        }
-
-
     }
 }
 .update-password {
