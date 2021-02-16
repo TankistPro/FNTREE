@@ -1498,14 +1498,36 @@ nav {
         & .form {
             margin-top: 60px;
             margin-bottom: 66px;
+            position: relative;
 
-            & p {
+            .form-input:not(:focus):valid~.form-label,
+            .form-input:focus~.form-label{
+                transition: .4s all;
+                font-size: 16px;
+                top: -70%;
+            }
+
+            // & p {
+            //     font-style: normal;
+            //     font-weight: 500;
+            //     font-size: 16px;
+            //     line-height: 19px;
+            //     color: rgba(255, 255, 255, 0.66);
+            //     margin-bottom: 13px;
+            // }
+
+            & span {
+                pointer-events: none;
+                position: absolute;
+                left: 1px;
+                top: 10px;
                 font-style: normal;
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 18px;
                 line-height: 19px;
                 color: rgba(255, 255, 255, 0.66);
                 margin-bottom: 13px;
+                transition: .4s all;
             }
 
             & input {

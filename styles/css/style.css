@@ -1464,15 +1464,28 @@ nav .nav-items .item:hover::after {
 .update-password__menu .form {
   margin-top: 60px;
   margin-bottom: 66px;
+  position: relative;
 }
 
-.update-password__menu .form p {
+.update-password__menu .form .form-input:not(:focus):valid ~ .form-label,
+.update-password__menu .form .form-input:focus ~ .form-label {
+  transition: .4s all;
+  font-size: 16px;
+  top: -70%;
+}
+
+.update-password__menu .form span {
+  pointer-events: none;
+  position: absolute;
+  left: 1px;
+  top: 10px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 19px;
   color: rgba(255, 255, 255, 0.66);
   margin-bottom: 13px;
+  transition: .4s all;
 }
 
 .update-password__menu .form input {
