@@ -1500,7 +1500,7 @@ nav {
             margin-bottom: 76px;
             position: relative;
 
-            .form-input:not(:focus):valid~.form-label,
+            .form-input:not(:focus):valid~.form-label, 
             .form-input:focus~.form-label{
                 transition: .4s all;
                 font-size: 16px;

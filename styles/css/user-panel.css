@@ -23,7 +23,7 @@ main {
   top: 0;
   position: fixed;
   z-index: 1;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   display: flex;
   background: rgba(19, 0, 48, 0.33);
@@ -110,7 +110,7 @@ main {
   top: 0;
   position: fixed;
   z-index: 1;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: rgba(19, 0, 48, 0.33);
   display: flex;
