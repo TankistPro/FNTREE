@@ -304,7 +304,7 @@ nav .nav-items .item:hover::after {
 }
 
 .main-banner .slider-wrapper {
-  width: 5760px;
+  width: 100%;
   display: flex;
   transition: .5s all;
 }
@@ -381,6 +381,8 @@ nav .nav-items .item:hover::after {
 
 .main-banner .slider-item {
   position: relative;
+  width: 100%;
+  flex: 0 0 100%;
 }
 
 .main-banner .slider-item.first {
@@ -741,7 +743,6 @@ nav .nav-items .item:hover::after {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  background-size: cover;
 }
 
 .fortnite-packages__slider__blocks__block .sale {

@@ -48,7 +48,7 @@ function verticalSlider() {
         }
         wrap.style.transition = 'none';
         wrap.style.transform = `translateY(0%)`;
-    }, 500);
+    }, 600);
 }
 
 window.addEventListener(`resize`, () => {
