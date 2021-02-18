@@ -4,14 +4,15 @@ const control_pages = controler.querySelector('.pages');
 
 let main_page = control_pages.querySelector('.active').textContent;
 let num_pages = Number(main_page)*8;
-closeTuples(num_pages);
+if (window.innerWidth <= 1100) {
+    closeTuples(num_pages);
+}
 
 for (let i=0; i<control_pages.children.length; i++) {
     control_pages.children[i].addEventListener('click', () => changePage(event));
 }
 
 window.addEventListener('resize', () => {
-    console.log('h');
     if (window.innerWidth <= 1100) {
         closeTuples(num_pages);
     } else {

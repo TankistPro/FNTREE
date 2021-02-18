@@ -527,6 +527,8 @@ main .tbl table .tbl-content tr td {
   color: #3D3D3D;
   line-height: 24px;
   font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
   padding: 17px 0;
   font-weight: 500;
   vertical-align: middle;
