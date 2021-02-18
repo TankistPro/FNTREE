@@ -496,7 +496,7 @@ main {
             border-collapse: collapse;
             width: 100%;
             padding: 0 45px;
-            min-width: 1580px;
+            min-width: 1700px;
             .tbl-header {
                 background-color: #ffffff;
                 tr {
@@ -585,7 +585,7 @@ main {
 
                         .ex-state {
                             margin: auto;
-                            max-width: 95%;
+                            max-width: 75%;
                             padding: 8px 0;
                             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
                             border-radius: 10px;
@@ -593,7 +593,7 @@ main {
                                 color: #ffffff;
                                 text-transform: uppercase;
                                 font-size: 1.0625rem;
-                                font-weight: 600;
+                                font-weight: 500;
 
                                 &::before {
                                     margin-right: 15px;
