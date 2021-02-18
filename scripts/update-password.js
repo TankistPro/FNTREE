@@ -45,7 +45,6 @@ function focus_input() {
 function input_pas(el, i) {
     
     if (el.value.length == 5) {
-        console.log('p');
         let key = `${el.value}`;
         for (let k=0; k<5; k++) {
             list_input[k].value = key[k];

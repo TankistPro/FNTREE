@@ -52,17 +52,18 @@ function gorizontalSlider(side) {
                     countBottom = 0;
                 }
                 countBottom = Number(countBottom)+1;
-                countTop = Number(countBottom)+1;
+            }
+            if (sliderItem[i].style.order == '1') {
+                countTop = sliderItem[i].getAttribute('name');
+                countTop = Number(countTop)+1;
                 if (countTop == sliderItem.length+1) {
                     countTop = 1;
                 }
-                break
             }
         }
 
         countTop = ('0' + countTop).split(-2)[0];
         countBottom = ('0' + countBottom).split(-2)[0];
-
         counterBottom.textContent = countBottom;
         counterTop.textContent = countTop;
 
@@ -81,6 +82,25 @@ function gorizontalSlider(side) {
     } 
 
     if (side == 'left') {
+        timeTop.style.height = '100%';
+        timeBottom.style.height = '0%';
+
+        for (let i=0; i<sliderItem.length; i++) {
+            if (sliderItem[i].style.order == sliderItem.length-1) {
+                countBottom = sliderItem[i].getAttribute('name');
+            }
+            if (sliderItem[i].style.order == '0') {
+                countTop = sliderItem[i].getAttribute('name');
+                countTop = Number(countTop);
+            }
+        }
+
+        countTop = ('0' + countTop).split(-2)[0];
+        countBottom = ('0' + countBottom).split(-2)[0];
+
+        counterBottom.textContent = countBottom;
+        counterTop.textContent = countTop;
+
         for (let i=0; i<sliderItem.length; i++) {
             let k = sliderItem[i].style.order;
             if (k==Number(sliderItem.length)-1) {
@@ -94,9 +114,6 @@ function gorizontalSlider(side) {
         setTimeout(() => {
             sliderWrapper.style.transition = 'transform 0.6s ease';
             sliderWrapper.style.transform = `translateX(0%)`;
-
-            timeTop.style.height = '100%';
-            timeBottom.style.height = '0%';
         }, 200)
     }
 }

@@ -53,11 +53,9 @@ function verticalSlider() {
 
 window.addEventListener(`resize`, () => {
     if (window.innerWidth > 1162) {
-        console.log('h')
         right.addEventListener('click', gorizontalSlider);
         right.removeEventListener('click', verticalSlider);
     } else {
-        console.log('hyy')
         right.removeEventListener('click', gorizontalSlider);
         right.addEventListener('click', verticalSlider);
     }
