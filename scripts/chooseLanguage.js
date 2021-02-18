@@ -4,7 +4,7 @@ const main_lang = language.getElementsByClassName('main')[0];
 const img_contr = language.getElementsByTagName('img')[0];
 const list_p = list_language.getElementsByTagName('p');
 
-img_contr.addEventListener('click', () => open_list());
+language.addEventListener('click', () => open_list());
 
 for (let i=0; i<list_p.length; i++) {
     list_p[i].addEventListener('click', () => changeLn(list_p[i]));

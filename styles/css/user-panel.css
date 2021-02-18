@@ -282,6 +282,7 @@ main {
   height: 100%;
   margin-right: 158px;
   position: relative;
+  cursor: pointer;
 }
 
 .header__language p {
@@ -291,10 +292,6 @@ main {
   line-height: 24px;
   color: #000000;
   margin-right: 7px;
-}
-
-.header__language img {
-  cursor: pointer;
 }
 
 .header__language .list-language {
@@ -354,6 +351,16 @@ main {
 
 .header__user .open {
   cursor: pointer;
+  width: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__user .open img {
+  width: 12px;
+  height: 8px;
 }
 
 .header__user__func {
@@ -590,7 +597,7 @@ main .tbl table .tbl-content tr td .pass-btn {
 main .tbl table .tbl-content tr td .ex-state {
   margin: auto;
   max-width: 75%;
-  padding: 8px 0;
+  padding: 8px 8px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
