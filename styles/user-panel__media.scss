@@ -48,6 +48,16 @@
     .header__language {
         margin-right: 88px;
     }
+
+    main {
+        & .control-tbn {
+            display: flex;
+        }
+
+        & .tbl {
+            overflow-y: hidden;
+        }
+    }
 }
 
 @media screen and (max-width: 610px) {

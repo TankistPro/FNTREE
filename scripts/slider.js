@@ -9,6 +9,10 @@ const sliderTime = document.querySelector('.slider-counter__line'),
     timeTop = sliderTime.querySelector('.slider-counter__line-top'),
     timeBottom = sliderTime.querySelector('.slider-counter__line-bottom');
 
+const counterTop = document.querySelector('.slider-counter__top'),
+    counterBottom = document.querySelector('.slider-counter__bottom');
+
+
 for (let i = 0; i<sliderItem.length; i++) {
     sliderItem[i].style.order = `${i}`;
 }
@@ -34,11 +38,33 @@ arrowRightAdapt.addEventListener('click', () => gorizontalSlider('right'));
 arrowLeft.addEventListener('click', () => gorizontalSlider('left'));
 
 function gorizontalSlider(side) {
+    let countTop, countBottom;
     if (side == 'right') {
         sliderWrapper.style.transition = 'transform 0.6s ease';
         sliderWrapper.style.transform = `translateX(-100%)`;
         timeTop.style.height = '100%';
         timeBottom.style.height = '0%';
+
+        for (let i=0; i<sliderItem.length; i++) {
+            if (sliderItem[i].style.order == '0') {
+                countBottom = sliderItem[i].getAttribute('name');
+                if (countBottom == sliderItem.length) {
+                    countBottom = 0;
+                }
+                countBottom = Number(countBottom)+1;
+                countTop = Number(countBottom)+1;
+                if (countTop == sliderItem.length+1) {
+                    countTop = 1;
+                }
+                break
+            }
+        }
+
+        countTop = ('0' + countTop).split(-2)[0];
+        countBottom = ('0' + countBottom).split(-2)[0];
+
+        counterBottom.textContent = countBottom;
+        counterTop.textContent = countTop;
 
         setTimeout(() => {
             for (let i=0; i<sliderItem.length; i++) {

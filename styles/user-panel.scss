@@ -10,9 +10,9 @@ body {
     overflow-y: hidden;
     scrollbar-width: none; 
 
-    &::-webkit-scrollbar {
-        width: 0px; 
-    }
+    // &::-webkit-scrollbar {
+    //     width: 0px; 
+    // }
 }
 
 main {
@@ -476,7 +476,8 @@ main {
     .tbl {
         margin-top: 40px;
         max-height: 765px;
-        overflow-y: scroll;
+        overflow: scroll;
+        padding: 0 17px 7px 0;
 
         &::-webkit-scrollbar {
             width: 7px;
@@ -495,6 +496,7 @@ main {
             border-collapse: collapse;
             width: 100%;
             padding: 0 45px;
+            min-width: 1580px;
             .tbl-header {
                 background-color: #ffffff;
                 tr {
@@ -513,10 +515,12 @@ main {
                 overflow-y: scroll;
                 max-height: 753px;
                 height: 100%;
+                table-layout: fixed;
 
                 background-color: #ffffff;
                 tr {
-
+                    display: table-row;
+                    
                     td {
                         text-align: center;
                         color: #3D3D3D;
@@ -572,14 +576,14 @@ main {
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            margin-left: 35px;
+                            margin-left: 28px;
                             cursor: pointer;
                         }
 
 
                         .ex-state {
                             margin: auto;
-                            max-width: 143px;
+                            max-width: 95%;
                             padding: 8px 0;
                             box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
                             border-radius: 10px;
@@ -646,6 +650,13 @@ main {
                             justify-content: flex-end;
                             color: #AEAEAE;
                             margin-right: 20%;
+
+                            & p {
+                                font-weight: 500;
+                                font-size: 27px;
+                                line-height: 32px;
+                                color: #AEAEAE;
+                            }
                             
                             input {
                                 background: #FFFFFF;
@@ -656,6 +667,9 @@ main {
                                 outline: none;
                                 padding: 10px 17px;
                                 color: #3D3D3D;
+                                font-weight: 500;
+                                font-size: 15px;
+                                line-height: 18px;
                             }
                         }
                     }
@@ -663,6 +677,58 @@ main {
                     border-bottom: 3px solid#FCFCFC;
                 }
             }
+        }
+    }
+
+    & .control-tbn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 28px 0;
+        display: none;
+
+        & .left, & .pages__num, & .right {
+            width: 29px;
+            height: 31px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-right: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: #AEAEAE;
+            cursor: pointer;
+            transition: .3s all;
+
+            &:hover {
+                transition: .3s all;
+                background: #E72487;
+                color: #fff;
+
+                & svg path {
+                    fill: #fff;
+                }
+            }
+        }
+
+        & .active {
+            background: #E72487;
+            color: #fff;
+        }
+
+        & .right {
+            margin-right: 0;
+        }
+
+        & .pages {
+            display: flex;
         }
     }
 }

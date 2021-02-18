@@ -25,6 +25,8 @@ function openUser() {
         header.style.right = '76%';
         main.style.position = 'relative';
         main.style.right = '76%';
+        header.style.left = 'auto';
+        main.style.left = 'auto';
     }, 20);
 }
 
@@ -38,6 +40,8 @@ function openNav() {
         header.style.left = '76%';
         main.style.position = 'relative';
         main.style.left = '76%';
+        header.style.right = 'auto';
+        main.style.right = 'auto';
     }, 20);
 }
 

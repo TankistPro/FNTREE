@@ -11,10 +11,6 @@ body {
   scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-  width: 0px;
-}
-
 main {
   transition: .3s all;
 }
@@ -476,7 +472,8 @@ main {
 main .tbl {
   margin-top: 40px;
   max-height: 765px;
-  overflow-y: scroll;
+  overflow: scroll;
+  padding: 0 17px 7px 0;
 }
 
 main .tbl::-webkit-scrollbar {
@@ -496,6 +493,7 @@ main .tbl table {
   border-collapse: collapse;
   width: 100%;
   padding: 0 45px;
+  min-width: 1580px;
 }
 
 main .tbl table .tbl-header {
@@ -515,10 +513,12 @@ main .tbl table .tbl-content {
   overflow-y: scroll;
   max-height: 753px;
   height: 100%;
+  table-layout: fixed;
   background-color: #ffffff;
 }
 
 main .tbl table .tbl-content tr {
+  display: table-row;
   border-bottom: 3px solid #FCFCFC;
 }
 
@@ -581,13 +581,13 @@ main .tbl table .tbl-content tr td .pass-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35px;
+  margin-left: 28px;
   cursor: pointer;
 }
 
 main .tbl table .tbl-content tr td .ex-state {
   margin: auto;
-  max-width: 143px;
+  max-width: 95%;
   padding: 8px 0;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -655,6 +655,13 @@ main .tbl table .tbl-content tr .col__pass {
   margin-right: 20%;
 }
 
+main .tbl table .tbl-content tr .col__pass p {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+  color: #AEAEAE;
+}
+
 main .tbl table .tbl-content tr .col__pass input {
   background: #FFFFFF;
   max-width: 176px;
@@ -664,6 +671,60 @@ main .tbl table .tbl-content tr .col__pass input {
   outline: none;
   padding: 10px 17px;
   color: #3D3D3D;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+main .control-tbn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px 0;
+  display: none;
+}
+
+main .control-tbn .left, main .control-tbn .pages__num, main .control-tbn .right {
+  width: 29px;
+  height: 31px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #AEAEAE;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+main .control-tbn .left:hover, main .control-tbn .pages__num:hover, main .control-tbn .right:hover {
+  transition: .3s all;
+  background: #E72487;
+  color: #fff;
+}
+
+main .control-tbn .left:hover svg path, main .control-tbn .pages__num:hover svg path, main .control-tbn .right:hover svg path {
+  fill: #fff;
+}
+
+main .control-tbn .active {
+  background: #E72487;
+  color: #fff;
+}
+
+main .control-tbn .right {
+  margin-right: 0;
+}
+
+main .control-tbn .pages {
+  display: flex;
 }
 
 .popop-change-password {
