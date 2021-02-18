@@ -1,47 +1,76 @@
-// function checkEnd(offset) {
-//     if(offset > 0 || offset < -3841) return offset = -1920;
-//     else return offset;
+const arrowLeft = document.querySelector('.arrows-block__left'),
+    arrowRight = document.querySelector('.arrows-block__right'),
+    arrowRightAdapt = document.querySelector('.slider-arrow-right');
 
-// }
+const sliderWrapper = document.querySelector('.slider-wrapper'),
+    sliderItem = sliderWrapper.children;
 
-// const arrowLeft = document.querySelector(".arrows-block__left"),
-//     arrowRight = document.querySelector(".arrows-block__right");
+const sliderTime = document.querySelector('.slider-counter__line'),
+    timeTop = sliderTime.querySelector('.slider-counter__line-top'),
+    timeBottom = sliderTime.querySelector('.slider-counter__line-bottom');
 
-// const sliderWrapper = document.querySelector(".slider-wrapper"),
-//     sliderItem = document.querySelector(".slider-item");
-// console.log(sliderWrapper)
+for (let i = 0; i<sliderItem.length; i++) {
+    sliderItem[i].style.order = `${i}`;
+}
 
-// let offset = -1920;
-// sliderWrapper.style.transform = `translate(${ offset }px)`
 
-// const changeSlide = (event) => {
-//     const target = event.target.closest(".arrows-block__left" ) ||
-//                 event.target.closest(".arrows-block__right" );
+timeTop.style.height = '100%';
+timeBottom.style.height = '0%';
 
-//     if(target.classList.contains("arrows-block__left")) {
-//         offset = offset + sliderItem.clientWidth;
-//         console.log(offset)
-//         offset = checkEnd(offset);
-//         sliderWrapper.style.transform = `translate(${ offset }px)`
-//     } else {
-//         offset = offset - sliderItem.clientWidth;
-//         console.log(offset)
-//         offset = checkEnd(offset);
-//         sliderWrapper.style.transform = `translate(${ offset }px)`;
-//     }
-// };
+let timerSlider = setInterval(() => {
+    let i = timeTop.style.height.replace('%', '')-1;
+    let k = Number(timeBottom.style.height.replace('%', ''))+1;
+    timeTop.style.height = `${i}%`;
+    timeBottom.style.height = `${k}%`;
+    if (i == 0) {
+        gorizontalSlider('right');
+        timeTop.style.height = '100%';
+        timeBottom.style.height = '0%';
+    }
+}, 50);
 
-// arrowLeft.addEventListener('click', changeSlide);
-// arrowRight.addEventListener('click', changeSlide);
+arrowRight.addEventListener('click', () => gorizontalSlider('right'));
+arrowRightAdapt.addEventListener('click', () => gorizontalSlider('right'));
+arrowLeft.addEventListener('click', () => gorizontalSlider('left'));
 
-const arrowLeft = document.querySelector(".arrows-block__left"),
-    arrowRight = document.querySelector(".arrows-block__right");
+function gorizontalSlider(side) {
+    if (side == 'right') {
+        sliderWrapper.style.transition = 'transform 0.6s ease';
+        sliderWrapper.style.transform = `translateX(-100%)`;
+        timeTop.style.height = '100%';
+        timeBottom.style.height = '0%';
 
-const sliderWrapper = document.querySelector(".slider-wrapper"),
-    sliderItem = document.getElementsByClassName('.slider-item');
+        setTimeout(() => {
+            for (let i=0; i<sliderItem.length; i++) {
+                let k = sliderItem[i].style.order;
+                if (k==0) {
+                    k = Number(sliderItem.length);
+                }
+                k = Number(k)-1;
+                sliderItem[i].style.order = `${k}`;
+            }
+            sliderWrapper.style.transition = 'none';
+            sliderWrapper.style.transform = `translateX(0%)`;
+        }, 800);
+    } 
 
-arrowLeft.addEventListener('click', () => {
-    console.log('g');
-    sliderWrapper.style.transform = 'translateX(-100%)';
-    // console.log(sliderWrapper.style);
-})
+    if (side == 'left') {
+        for (let i=0; i<sliderItem.length; i++) {
+            let k = sliderItem[i].style.order;
+            if (k==Number(sliderItem.length)-1) {
+                k = -1;
+            }
+            k = Number(k)+1;
+            sliderItem[i].style.order = `${k}`;
+        }
+        sliderWrapper.style.transition = 'none';
+        sliderWrapper.style.transform = `translateX(-100%)`;
+        setTimeout(() => {
+            sliderWrapper.style.transition = 'transform 0.6s ease';
+            sliderWrapper.style.transform = `translateX(0%)`;
+
+            timeTop.style.height = '100%';
+            timeBottom.style.height = '0%';
+        }, 200)
+    }
+}

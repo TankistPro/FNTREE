@@ -328,6 +328,7 @@ nav {
         width: 15px;
         height: 24px;
         display: none;
+        cursor: pointer;
 
         img {
             max-width: none;
@@ -379,14 +380,16 @@ nav {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 150px;
 
             &-top, &-bottom {
-                height: 75px;
+                height: 100%;
                 width: 2px;
                 background-color:rgba(255, 255, 255, 0.25);
                 border-radius: 62px;
 
                 &.active {
+                    height: 0%;
                     background-color:#FF008A;
                 }
             }
