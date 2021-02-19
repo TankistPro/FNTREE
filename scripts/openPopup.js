@@ -55,3 +55,12 @@ vBucksOffersBtn.forEach(btn => {
         vBucksPopup.style.display = "flex";
     })
 })
+
+// ============ Fortnite-package =================
+const FpBtn = document.querySelectorAll(".fortnite-packages__slider__blocks__block");
+console.log(FpBtn)
+// vBucksOffersBtn.forEach(btn => {
+//     btn.addEventListener("click", () => {
+//         vBucksPopup.style.display = "flex";
+//     })
+// })

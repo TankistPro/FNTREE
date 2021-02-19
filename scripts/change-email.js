@@ -3,7 +3,11 @@ const window_changeEmail = document.getElementsByClassName('popop-enter-email')[
 const btn_closeChangeEmail = window_changeEmail.getElementsByClassName('close')[0];
 const btn_enterChangeEmail = window_changeEmail.getElementsByTagName('button')[0];
 
+const btn_changeEmailM = document.getElementsByClassName('header-user__main__list')[0].getElementsByClassName('item')[1];
+
+
 btn_changeEmail.addEventListener('click', () => openChangeEmail());
+btn_changeEmailM.addEventListener('click', () => openChangeEmail());
 btn_closeChangeEmail.addEventListener('click', () => closeChangeEmail());
 btn_enterChangeEmail.addEventListener('click', () => closeChangeEmail());
 
@@ -14,3 +18,4 @@ function openChangeEmail() {
 function closeChangeEmail() {
     window_changeEmail.style.display = 'none';
 }
+

@@ -791,17 +791,10 @@ main {
         }
 
         & .current-password {
-            & p {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 26px;
-                color: rgba(0, 0, 0, 0.66);
-                margin-bottom: 5px;
-            }
 
             &__input {
                 margin-bottom: 70px;
+                margin-top: 20px;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -814,6 +807,27 @@ main {
                     justify-content: space-between;
                     border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
                     padding: 10px 0;
+                    position: relative;
+
+                    .form-input:not(:focus):valid~.form-label,
+                    .form-input:focus~.form-label{
+                        transition: .4s all;
+                        font-size: 22px;
+                        top: -50%;
+                    }
+
+                    & span {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 26px;
+                        color: rgba(0, 0, 0, 0.66);
+                        margin-bottom: 5px;
+                        position: absolute;
+                        top: 50%;
+                        transition: .4s all;
+                        pointer-events: none;
+                    }
 
                     & input {
                         width: 85%;
@@ -823,7 +837,7 @@ main {
                         line-height: 33px;
                         display: flex;
                         align-items: center;
-                        color: rgba(0, 0, 0, 0.66);
+                        color: #000000;
                         border: none;
                         outline: none;
 
@@ -851,7 +865,7 @@ main {
                 & .input {
                     border-bottom: 1.39683px solid rgba(255, 0, 0, 0.75);
 
-                    & input::placeholder {
+                    & span {
                         color: #FF4040;
                     }
                 }
@@ -867,18 +881,9 @@ main {
         }
 
         .confirm-password {
-            margin-top: 43px;
+            margin-top: 73px;
             margin-bottom: 60px;
 
-            & p {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 22px;
-                line-height: 26px;
-                color: rgba(0, 0, 0, 0.66);
-                margin-bottom: 5px;
-            }
-            
             & .input {
                 display: flex;
                 width: 100%;
@@ -886,6 +891,27 @@ main {
                 justify-content: space-between;
                 border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
                 padding: 10px 0;
+                position: relative;
+
+                .form-input:not(:focus):valid~.form-label,
+                .form-input:focus~.form-label{
+                    transition: .4s all;
+                    font-size: 22px;
+                    top: -50%;
+                }
+
+                & span {
+                    position: absolute;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: rgba(0, 0, 0, 0.66);
+                    margin-bottom: 5px;
+                    top: 40%;
+                    transition: .4s all;
+                    pointer-events: none;
+                }
 
                 & input {
                     width: 85%;
@@ -955,23 +981,36 @@ main {
             right: 25px;
             cursor: pointer;
         }
-        
-        & p {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 22.3492px;
-            line-height: 26px;
-            color: rgba(0, 0, 0, 0.66);
-        }
 
         &__input {
-            margin-top: 25px;
-            margin-bottom: 10px;
+            margin-top: 50px;
+            margin-bottom: 15px;
 
             & .input {
                 border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
                 width: 100%;
                 padding: 4px 0;
+                position: relative;
+
+                .form-input:not(:focus):valid~.form-label,
+                .form-input:focus~.form-label{
+                    transition: .4s all;
+                    font-size: 24px;
+                    top: -80%;
+                }
+
+                & span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: rgba(0, 0, 0, 0.66);
+                    position: absolute;
+                    left: 0;
+                    top: 30%;
+                    transition: .4s all;
+                    pointer-events: none;
+                }
     
                 & input {
                     outline: none;
@@ -1050,23 +1089,36 @@ main {
             right: 25px;
             cursor: pointer;
         }
-        
-        & p {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 22.3492px;
-            line-height: 26px;
-            color: rgba(0, 0, 0, 0.66);
-        }
 
         &__input {
-            margin-top: 25px;
+            margin-top: 50px;
             margin-bottom: 10px;
 
             & .input {
                 border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
                 width: 100%;
                 padding: 4px 0;
+                position: relative;
+
+                .form-input:not(:focus):valid~.form-label,
+                .form-input:focus~.form-label{
+                    transition: .4s all;
+                    font-size: 24px;
+                    top: -80%;
+                }
+
+                & span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22.3492px;
+                    line-height: 26px;
+                    color: rgba(0, 0, 0, 0.66);
+                    position: absolute;
+                    left: 0;
+                    top: 30%;
+                    transition: .4s all;
+                    pointer-events: none;
+                }
     
                 & input {
                     outline: none;

@@ -787,17 +787,9 @@ main .control-tbn .pages {
   cursor: pointer;
 }
 
-.popop-change-password__block .current-password p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.66);
-  margin-bottom: 5px;
-}
-
 .popop-change-password__block .current-password__input {
   margin-bottom: 70px;
+  margin-top: 20px;
 }
 
 .popop-change-password__block .current-password__input:last-child {
@@ -811,6 +803,27 @@ main .control-tbn .pages {
   justify-content: space-between;
   border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
   padding: 10px 0;
+  position: relative;
+}
+
+.popop-change-password__block .current-password__input .input .form-input:not(:focus):valid ~ .form-label,
+.popop-change-password__block .current-password__input .input .form-input:focus ~ .form-label {
+  transition: .4s all;
+  font-size: 22px;
+  top: -50%;
+}
+
+.popop-change-password__block .current-password__input .input span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+  margin-bottom: 5px;
+  position: absolute;
+  top: 50%;
+  transition: .4s all;
+  pointer-events: none;
 }
 
 .popop-change-password__block .current-password__input .input input {
@@ -821,7 +834,7 @@ main .control-tbn .pages {
   line-height: 33px;
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.66);
+  color: #000000;
   border: none;
   outline: none;
 }
@@ -845,7 +858,7 @@ main .control-tbn .pages {
   border-bottom: 1.39683px solid rgba(255, 0, 0, 0.75);
 }
 
-.popop-change-password__block .current-password .wrong .input input::placeholder {
+.popop-change-password__block .current-password .wrong .input span {
   color: #FF4040;
 }
 
@@ -858,17 +871,8 @@ main .control-tbn .pages {
 }
 
 .popop-change-password__block .confirm-password {
-  margin-top: 43px;
+  margin-top: 73px;
   margin-bottom: 60px;
-}
-
-.popop-change-password__block .confirm-password p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.66);
-  margin-bottom: 5px;
 }
 
 .popop-change-password__block .confirm-password .input {
@@ -878,6 +882,27 @@ main .control-tbn .pages {
   justify-content: space-between;
   border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
   padding: 10px 0;
+  position: relative;
+}
+
+.popop-change-password__block .confirm-password .input .form-input:not(:focus):valid ~ .form-label,
+.popop-change-password__block .confirm-password .input .form-input:focus ~ .form-label {
+  transition: .4s all;
+  font-size: 22px;
+  top: -50%;
+}
+
+.popop-change-password__block .confirm-password .input span {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+  margin-bottom: 5px;
+  top: 40%;
+  transition: .4s all;
+  pointer-events: none;
 }
 
 .popop-change-password__block .confirm-password .input input {
@@ -946,23 +971,36 @@ main .control-tbn .pages {
   cursor: pointer;
 }
 
-.popop-enter-email__block p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22.3492px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.66);
-}
-
 .popop-enter-email__block__input {
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .popop-enter-email__block__input .input {
   border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
   width: 100%;
   padding: 4px 0;
+  position: relative;
+}
+
+.popop-enter-email__block__input .input .form-input:not(:focus):valid ~ .form-label,
+.popop-enter-email__block__input .input .form-input:focus ~ .form-label {
+  transition: .4s all;
+  font-size: 24px;
+  top: -80%;
+}
+
+.popop-enter-email__block__input .input span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transition: .4s all;
+  pointer-events: none;
 }
 
 .popop-enter-email__block__input .input input {
@@ -1040,16 +1078,8 @@ main .control-tbn .pages {
   cursor: pointer;
 }
 
-.popop-enter-code__block p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22.3492px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.66);
-}
-
 .popop-enter-code__block__input {
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 10px;
 }
 
@@ -1057,6 +1087,27 @@ main .control-tbn .pages {
   border-bottom: 1.39683px solid rgba(0, 0, 0, 0.75);
   width: 100%;
   padding: 4px 0;
+  position: relative;
+}
+
+.popop-enter-code__block__input .input .form-input:not(:focus):valid ~ .form-label,
+.popop-enter-code__block__input .input .form-input:focus ~ .form-label {
+  transition: .4s all;
+  font-size: 24px;
+  top: -80%;
+}
+
+.popop-enter-code__block__input .input span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.3492px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.66);
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transition: .4s all;
+  pointer-events: none;
 }
 
 .popop-enter-code__block__input .input input {

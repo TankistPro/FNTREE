@@ -13,3 +13,19 @@ function changeInput(el) {
         el.parentElement.getElementsByTagName('input')[0].type = 'password';
     }
 }
+
+const eyeUserP = document.querySelector('.popop-change-password__block').querySelectorAll('.eye');
+
+for (let i=0; i<eyeUserP.length; i++) {
+    eyeUserP[i].addEventListener('click', () => changeInputUP(eyeUserP[i]));
+}
+
+function changeInputUP(el) {
+    if (el.src.includes('eye-close')) {
+        el.src = './img/user-panel/eye-open.svg';
+        el.parentElement.querySelector('input').type = 'text';
+    } else {
+        el.src = './img/user-panel/eye-close.svg';
+        el.parentElement.querySelector('input').type = 'password';
+    }
+}

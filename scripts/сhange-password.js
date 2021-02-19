@@ -1,9 +1,11 @@
 const window_changePas = document.getElementsByClassName('popop-change-password')[0];
 const btn_change = document.getElementsByClassName('settings__list')[0].getElementsByTagName('p')[0];
+const btn_changeM = document.getElementsByClassName('header-user__main__list')[0].getElementsByClassName('item')[0];
 const btn_closeChangePas = window_changePas.getElementsByClassName('close')[0];
 const btn_changeChangePas = window_changePas.getElementsByTagName('button')[0];
 
 btn_change.addEventListener('click', () => openChangePas());
+btn_changeM.addEventListener('click', () => openChangePas());
 btn_closeChangePas.addEventListener('click', () => closeChangePas());
 btn_changeChangePas.addEventListener('click', () => changeChangePas());
 

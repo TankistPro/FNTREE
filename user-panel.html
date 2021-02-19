@@ -408,26 +408,27 @@
         <div class="popop-change-password__block">
             <img src="./img/user-panel/close.svg" alt="" class="close">
             <div class="current-password">
-                <p>Current password</p>
                 <div class="current-password__input correctly">
                     <div class="input">
-                        <input type="password" placeholder="" value="*********************">
-                        <img src="./img/user-panel/eye-close.svg" alt="">
+                        <input type="password" placeholder="" required class="form-input">
+                        <span class="form-label">Current password</span>
+                        <img src="./img/user-panel/eye-close.svg" alt="" class="eye">
                     </div>
                 </div>
                 <div class="current-password__input wrong">
                     <div class="input">
-                        <input type="password" placeholder="New password">
-                        <img src="./img/user-panel/eye-close.svg" alt="">
+                        <input type="password" required class="form-input">
+                        <span class="form-label">New password</span>
+                        <img src="./img/user-panel/eye-close.svg" alt="" class="eye">
                     </div>
                     <div class="wrong__text"><p>Password must be between 6 and 18 characters using letters “A-z”!</p></div>
                 </div>
             </div>
-            <div class="confirm-password">
-                <p>Confirm password</p>
+            <div class="confirm-password" >
                 <div class="input">
-                    <input type="text">
-                    <img src="./img/user-panel/eye-open.svg" alt="">
+                    <input type="password" required class="form-input">
+                    <span class="form-label">Confirm password</span>
+                    <img src="./img/user-panel/eye-close.svg" alt="" class="eye">
                 </div>
             </div>
             <button class="change">CHANGE</button>
@@ -436,10 +437,11 @@
     <div class="popop-enter-code" style="display: none;">
         <div class="popop-enter-code__block">
             <img src="./img/user-panel/close.svg" alt="" class="close">
-            <p>Enter your code:</p>
+            <!-- <p>Enter your code:</p> -->
             <div class="popop-enter-code__block__input">
                 <div class="input wrong">
-                    <input type="text" name="" id="">
+                    <input type="text" required class="form-input">
+                    <span class="form-label">Enter your code:</span>
                 </div>
                 <div class="wrong__text"><p>The entered code is incorrect!</p></div>
             </div>
@@ -449,10 +451,10 @@
     <div class="popop-enter-email" style="display: none;">
         <div class="popop-enter-email__block">
             <img src="./img/user-panel/close.svg" alt="" class="close">
-            <p>Enter new email:</p>
             <div class="popop-enter-email__block__input">
                 <div class="input wrong">
-                    <input type="text" name="" id="" placeholder="example@gmail.com">
+                    <input type="text" required class="form-input">
+                    <span class="form-label">Enter new email:</span>
                 </div>
                 <div class="wrong__text"><p>The entered email is incorrect!</p></div>
             </div>
@@ -465,5 +467,6 @@
     <script src="./scripts/change-email.js"></script>
     <script src="./scripts/NavAndUser.js"></script>
     <script src="./scripts/up-table.js"></script>
+    <script src="./scripts/openEye.js"></script>
 </body>
 </html>

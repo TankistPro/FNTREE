@@ -26,3 +26,4 @@ function openMenuSet() {
 function closeMenuSet() {
     open_set.style.display = "none";
 }
+
