@@ -1,6 +1,12 @@
 // =============LogIN & SignIn=================
 const openSignPopup = () => {
     signInPopup.style.display = "flex";
+    loginPopup.style.display = "none";
+}
+
+const openLogPopup = () => {
+    signInPopup.style.display = "none";
+    loginPopup.style.display = "flex";
 }
 
 const navButton = document.querySelector(".nav-block__right-btn"),
@@ -8,7 +14,12 @@ const navButton = document.querySelector(".nav-block__right-btn"),
     loginPopup = document.querySelector(".login"),
     signInPopup = document.querySelector(".signin"),
     links = document.querySelectorAll(".modal-block__header-link"),
-    closePopupIcons = document.querySelectorAll(".modal-block__close");
+    closePopupIcons = document.querySelectorAll(".modal-block__close"),
+    btnSigh = loginPopup.querySelector('.form-link'),
+    btnLog = signInPopup.querySelector('.form-link');
+
+btnLog.addEventListener("click", openLogPopup);
+btnSigh.addEventListener("click", openSignPopup);
 
 navButton.addEventListener("click", openSignPopup);
 
@@ -32,6 +43,7 @@ links.forEach(link => {
         }
     })
 })
+
 
 
 // ============ V-BUCKS =================

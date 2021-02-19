@@ -117,6 +117,7 @@ nav {
 
     .block-in {
         display: none;
+        cursor: pointer;
     }
 
     .nav-block {
@@ -719,7 +720,7 @@ nav {
         margin-left: 7.5%;
         display: flex;
         align-items: center;
-        width: 68%;
+        width: 70%;
         position: relative;
         overflow: hidden;
 
@@ -739,8 +740,8 @@ nav {
             width: 100%;
 
             & .item {
-                width: 33.333333333333333%;
-                flex: 0 0 33.33333333333333%;
+                width: 34%;
+                flex: 0 0 34%;
             }
     
             & .block-1 {
@@ -1284,6 +1285,11 @@ nav {
                 position: absolute;
                 top: 20%;
                 right: 2%;
+
+                & img {
+                    width: 20px;
+                    height: 21px;
+                }
             }
         }
 

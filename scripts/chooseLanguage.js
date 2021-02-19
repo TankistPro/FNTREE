@@ -14,10 +14,10 @@ for (let i=0; i<list_p.length; i++) {
 function open_list() {
     if (img_contr.style.transform == 'rotate(180deg)') {
         img_contr.style.transform = 'rotate(0deg)';
-        list_language.style.display = 'none'
+        list_language.style.display = 'none';
     } else {
         img_contr.style.transform = 'rotate(180deg)';
-        list_language.style.display = 'block'
+        list_language.style.display = 'block';
     }
 }
 
@@ -28,6 +28,4 @@ function changeLn(el) {
     if (el.textContent == 'English') {
         main_lang.textContent = `EN`;
     }
-    img_contr.style.transform = 'rotate(0deg)';
-    list_language.style.display = 'none'
 }

@@ -892,7 +892,7 @@
         }
 
         &__links {
-            margin: 0 50px;
+            margin: 0 50px 0 70px;
 
             & a {
                 font-size: 12px;
@@ -930,7 +930,7 @@
     }
 
     .update-password-key__menu {
-        height: 362px;
+        height: 402px;
         width: 350px;
         padding: 84px 31px 37px 31px;
 
@@ -940,12 +940,12 @@
         }
 
         & .form {
-            margin-top: 23px;
-            margin-bottom: 7px;
+            margin-top: 33px;
+            margin-bottom: 20px;
         }
 
         & .key-wrong {
-            margin-bottom: 6px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -1049,7 +1049,7 @@
 
 @media screen and (max-width: 411px) {
     .modal-wrapper.login .modal-block {
-        height: 580px;
+        height: 600px;
     } 
     .modal-wrapper.login .modal-block .form-btn {
         margin-top: 50px;

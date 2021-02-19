@@ -116,6 +116,7 @@ nav {
 
 nav .block-in {
   display: none;
+  cursor: pointer;
 }
 
 nav .nav-block {
@@ -699,7 +700,7 @@ nav .nav-items .item:hover::after {
   margin-left: 7.5%;
   display: flex;
   align-items: center;
-  width: 68%;
+  width: 70%;
   position: relative;
   overflow: hidden;
 }
@@ -721,8 +722,8 @@ nav .nav-items .item:hover::after {
 }
 
 .fortnite-packages__slider__blocks .item {
-  width: 33.333333333333333%;
-  flex: 0 0 33.33333333333333%;
+  width: 34%;
+  flex: 0 0 34%;
 }
 
 .fortnite-packages__slider__blocks .block-1 {
@@ -1255,6 +1256,11 @@ nav .nav-items .item:hover::after {
   position: absolute;
   top: 20%;
   right: 2%;
+}
+
+.modal-wrapper .form-field .password img {
+  width: 20px;
+  height: 21px;
 }
 
 .modal-wrapper .form-q {
