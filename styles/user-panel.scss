@@ -483,7 +483,8 @@ main {
     .tbl {
         margin-top: 40px;
         max-height: 765px;
-        overflow: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
         padding: 0 17px 7px 0;
 
         &::-webkit-scrollbar {
@@ -502,11 +503,15 @@ main {
         table {
             border-collapse: collapse;
             width: 100%;
-            padding: 0 45px;
             min-width: 1700px;
+            display: grid;
+
             .tbl-header {
                 background-color: #ffffff;
                 tr {
+                    display: grid;
+                    grid-template-columns: minmax(33px, auto) minmax(266px, auto) minmax(282px, auto) minmax(323px, auto) minmax(383px, auto) minmax(103px, auto) minmax(194px, auto) minmax(117px, auto);
+
                     th {
                         color: #000000;
                         line-height: 30px;
@@ -520,13 +525,29 @@ main {
 
             .tbl-content {
                 overflow-y: scroll;
-                max-height: 753px;
+                overflow-x: hidden;
+                max-height: 680px;
                 height: 100%;
                 table-layout: fixed;
-
                 background-color: #ffffff;
+                display: grid;
+
+                &::-webkit-scrollbar {
+                    width: 7px;
+                    height: 7px;
+                    background: #ffffff;
+                    border-radius: 3.5px;
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background-color: #3D3D3D;
+                    border-radius: 3.5px;
+                    margin-right: 40px;
+                }
+
                 tr {
-                    display: table-row;
+                    display: grid;
+                    grid-template-columns: minmax(33px, auto) minmax(266px, auto) minmax(282px, auto) minmax(323px, auto) minmax(383px, auto) minmax(103px, auto) minmax(194px, auto) minmax(117px, auto);
                     
                     td {
                         text-align: center;

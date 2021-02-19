@@ -17,7 +17,7 @@ window.addEventListener('resize', () => {
         closeTuples(num_pages);
     } else {
         for (let i = 0; i<tuples.length; i++) {
-            tuples[i].style.display = 'table-row';
+            tuples[i].style.display = 'grid';
         }
     }
 })
@@ -35,7 +35,7 @@ function changePage(event) {
 function closeTuples(el) {
     for (let i = 0; i<tuples.length; i++) {
         if (i>el-9 && i<el) {
-            tuples[i].style.display = 'table-row';
+            tuples[i].style.display = 'grid';
             continue
         }
         tuples[i].style.display = 'none';

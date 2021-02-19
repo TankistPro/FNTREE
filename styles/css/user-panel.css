@@ -479,7 +479,8 @@ main {
 main .tbl {
   margin-top: 40px;
   max-height: 765px;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   padding: 0 17px 7px 0;
 }
 
@@ -499,13 +500,18 @@ main .tbl::-webkit-scrollbar-thumb {
 main .tbl table {
   border-collapse: collapse;
   width: 100%;
-  padding: 0 45px;
   min-width: 1700px;
+  display: grid;
 }
 
 main .tbl table .tbl-header {
   background-color: #ffffff;
   border-bottom: 7px solid #FCFCFC;
+}
+
+main .tbl table .tbl-header tr {
+  display: grid;
+  grid-template-columns: minmax(33px, auto) minmax(266px, auto) minmax(282px, auto) minmax(323px, auto) minmax(383px, auto) minmax(103px, auto) minmax(194px, auto) minmax(117px, auto);
 }
 
 main .tbl table .tbl-header tr th {
@@ -518,14 +524,30 @@ main .tbl table .tbl-header tr th {
 
 main .tbl table .tbl-content {
   overflow-y: scroll;
-  max-height: 753px;
+  overflow-x: hidden;
+  max-height: 680px;
   height: 100%;
   table-layout: fixed;
   background-color: #ffffff;
+  display: grid;
+}
+
+main .tbl table .tbl-content::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: #ffffff;
+  border-radius: 3.5px;
+}
+
+main .tbl table .tbl-content::-webkit-scrollbar-thumb {
+  background-color: #3D3D3D;
+  border-radius: 3.5px;
+  margin-right: 40px;
 }
 
 main .tbl table .tbl-content tr {
-  display: table-row;
+  display: grid;
+  grid-template-columns: minmax(33px, auto) minmax(266px, auto) minmax(282px, auto) minmax(323px, auto) minmax(383px, auto) minmax(103px, auto) minmax(194px, auto) minmax(117px, auto);
   border-bottom: 3px solid #FCFCFC;
 }
 
