@@ -48,6 +48,7 @@ links.forEach(link => {
 
 // ============ V-BUCKS =================
 const vBucksOffersBtn = document.querySelectorAll(".offer-btn"),
+    vBucksBtn = document.querySelectorAll('.vbucks__blocks__block'),
     vBucksPopup = document.querySelector(".b-vbucks");
 
 vBucksOffersBtn.forEach(btn => {
@@ -56,11 +57,18 @@ vBucksOffersBtn.forEach(btn => {
     })
 })
 
+for (let i=0; i<vBucksBtn.length; i++) {
+    vBucksBtn[i].querySelector('.btn').addEventListener("click", () => {
+        vBucksPopup.style.display = "flex";
+    })
+}
+
 // ============ Fortnite-package =================
 const FpBtn = document.querySelectorAll(".fortnite-packages__slider__blocks__block");
-console.log(FpBtn)
-// vBucksOffersBtn.forEach(btn => {
-//     btn.addEventListener("click", () => {
-//         vBucksPopup.style.display = "flex";
-//     })
-// })
+
+for (let i=0; i<FpBtn.length; i++) {
+    FpBtn[i].querySelector('.buy').addEventListener('click', () => {
+        vBucksPopup.querySelector('.modal-block__header-text').textContent = 'DIAMOND DIVA PACK';
+        vBucksPopup.style.display = "flex";
+    })
+}
