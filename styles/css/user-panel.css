@@ -213,6 +213,12 @@ main {
   cursor: pointer;
 }
 
+.header__logo-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-open_user {
   display: none;
   width: 38px;
@@ -481,7 +487,6 @@ main .tbl {
   max-height: 765px;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 0 17px 7px 0;
 }
 
 main .tbl::-webkit-scrollbar {
@@ -505,11 +510,12 @@ main .tbl table {
 }
 
 main .tbl table .tbl-header {
-  background-color: #ffffff;
+  padding-right: 17px;
   border-bottom: 7px solid #FCFCFC;
 }
 
 main .tbl table .tbl-header tr {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: minmax(83px, auto) minmax(266px, auto) minmax(282px, auto) minmax(323px, auto) minmax(383px, auto) minmax(103px, auto) minmax(194px, auto) minmax(117px, auto);
 }
@@ -523,12 +529,12 @@ main .tbl table .tbl-header tr th {
 }
 
 main .tbl table .tbl-content {
+  padding-right: 17px;
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 680px;
   height: 100%;
   table-layout: fixed;
-  background-color: #ffffff;
   display: grid;
 }
 
@@ -546,6 +552,7 @@ main .tbl table .tbl-content::-webkit-scrollbar-thumb {
 }
 
 main .tbl table .tbl-content tr {
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: minmax(83px, auto) minmax(266px, auto) minmax(282px, auto) minmax(323px, auto) minmax(383px, auto) minmax(103px, auto) minmax(194px, auto) minmax(117px, auto);
   border-bottom: 3px solid #FCFCFC;

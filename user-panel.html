@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/css/reset.css">
     <link rel="stylesheet" href="./styles/css/user-panel.css">
     <link rel="stylesheet" href="./styles/css/user-panel__media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>User-panel</title>
 </head>
 <body>
@@ -30,13 +31,15 @@
         </div>
         <div class="header-nav__close"></div>
     </div>
-    <div class="header">
+    <div class="header" data-aos="fade-down" data-aos-duration="1000">
         <div class="header-open_nav"><img src="./img/user-panel/open-nav.svg" alt=""></div>
-        <a href="/index.html"><img src="./img/nav/logo.png" alt="logo" class="header__logo"></a>
+        <a href="index.html" class="header__logo-main"><img src="./img/nav/logo.png" alt="logo" class="header__logo"></a>
         <div class="header__links">
+            <div class="home link">HOME</div>
             <div class="history link">HISTORY</div>
-            <div class="vbucks link">VBUCKS</div>
+            <div class="special-offers link">SPECIAL OFFERS</div>
             <div class="vk-page link">VK PAGE</div>
+            <div class="packages link">FORTNITE PACKAGES</div>
         </div>
         <div class="lananduser">
             <div class="header__language">
@@ -78,7 +81,7 @@
             <img src="https://sun9-60.userapi.com/impf/c855420/v855420149/aeef9/AJ2U6OFs2E0.jpg?size=1080x962&quality=96&proxy=1&sign=5aa54e6c07ed9f06a690d2ec7be52025&type=album" alt="">
         </div>
     </div>
-    <main>
+    <main data-aos="fade-up"  data-aos-duration="1000">
         <div class="tbl">
             <table>
                 <thead class="tbl-header">
@@ -468,5 +471,9 @@
     <script src="./scripts/NavAndUser.js"></script>
     <script src="./scripts/up-table.js"></script>
     <script src="./scripts/openEye.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
