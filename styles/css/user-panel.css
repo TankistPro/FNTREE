@@ -1082,7 +1082,7 @@ main .control-tbn .pages {
 }
 
 .popop-enter-code__block__input {
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 10px;
 }
 
@@ -1097,7 +1097,7 @@ main .control-tbn .pages {
 .popop-enter-code__block__input .input .form-input:focus ~ .form-label {
   transition: .4s all;
   font-size: 24px;
-  top: -80%;
+  top: -100%;
 }
 
 .popop-enter-code__block__input .input span {

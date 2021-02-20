@@ -1094,7 +1094,7 @@ main {
         }
 
         &__input {
-            margin-top: 50px;
+            margin-top: 60px;
             margin-bottom: 10px;
 
             & .input {
@@ -1107,7 +1107,7 @@ main {
                 .form-input:focus~.form-label{
                     transition: .4s all;
                     font-size: 24px;
-                    top: -80%;
+                    top: -100%;
                 }
 
                 & span {
