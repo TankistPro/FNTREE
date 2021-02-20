@@ -17,23 +17,23 @@ function closeChangePas() {
     window_changePas.style.display = 'none';
 }
 
-const window_enterCode = document.getElementsByClassName('popop-enter-code')[0];
-const btn_closeEnterCode = window_enterCode.getElementsByClassName('close')[0];
-const btn_enterEnterCode = window_enterCode.getElementsByTagName('button')[0];
+// const window_enterCode = document.getElementsByClassName('popop-enter-code')[0];
+// const btn_closeEnterCode = window_enterCode.getElementsByClassName('close')[0];
+// const btn_enterEnterCode = window_enterCode.getElementsByTagName('button')[0];
 
-btn_enterEnterCode.addEventListener('click', () => enterEnterCode());
-btn_closeEnterCode.addEventListener('click', () => closeEnterCode());
+// btn_enterEnterCode.addEventListener('click', () => enterEnterCode());
+// btn_closeEnterCode.addEventListener('click', () => closeEnterCode());
 
 
 function changeChangePas() {
     window_changePas.style.display = 'none';
-    window_enterCode.style.display = 'flex';
+    // window_enterCode.style.display = 'flex';
 }
 
-function closeEnterCode() {
-    window_enterCode.style.display = 'none';
-}
+// function closeEnterCode() {
+//     window_enterCode.style.display = 'none';
+// }
 
-function enterEnterCode() {
-    window_enterCode.style.display = 'none';
-}
+// function enterEnterCode() {
+//     window_enterCode.style.display = 'none';
+// }
