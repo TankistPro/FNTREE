@@ -653,6 +653,7 @@ main {
 
                             &.orange {
                                 background-color: #FF8A00;
+                                cursor: pointer;
 
                                 p::before {
                                     content: url("../../img/table/message-icon.svg");
@@ -945,8 +946,9 @@ main {
             border-radius: 10.8777px;
             border: none;
 
+            font-family: "Gilroy", sans-serif;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 27.1942px;
             line-height: 32px;
             text-align: center;
@@ -1054,8 +1056,9 @@ main {
             border: none;
             outline: none;
 
+            font-family: "Gilroy", sans-serif;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 27.1942px;
             line-height: 32px;
             color: #FFFFFF;
@@ -1154,8 +1157,9 @@ main {
             border: none;
             outline: none;
 
+            font-family: "Gilroy", sans-serif;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 27.1942px;
             line-height: 32px;
             color: #FFFFFF;

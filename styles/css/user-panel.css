@@ -661,6 +661,7 @@ main .tbl table .tbl-content tr td .ex-state.success p::before {
 
 main .tbl table .tbl-content tr td .ex-state.orange {
   background-color: #FF8A00;
+  cursor: pointer;
 }
 
 main .tbl table .tbl-content tr td .ex-state.orange p::before {
@@ -934,8 +935,9 @@ main .control-tbn .pages {
   background: #FF008A;
   border-radius: 10.8777px;
   border: none;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 27.1942px;
   line-height: 32px;
   text-align: center;
@@ -1042,8 +1044,9 @@ main .control-tbn .pages {
   border-radius: 10.8777px;
   border: none;
   outline: none;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 27.1942px;
   line-height: 32px;
   color: #FFFFFF;
@@ -1141,8 +1144,9 @@ main .control-tbn .pages {
   border-radius: 10.8777px;
   border: none;
   outline: none;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 27.1942px;
   line-height: 32px;
   color: #FFFFFF;
